@@ -1,7 +1,7 @@
-#Установка VirtualBox под СentOS
-CentOS Linux release 8.1.1911 (Core) 
-core-4.1-amd64:core-4.1-noarch
-4.18.0-147.5.1.el8_1.x86_64
+# Установка VirtualBox под СentOS  
+CentOS Linux release 8.1.1911 (Core)  
+core-4.1-amd64:core-4.1-noarch  
+4.18.0-147.5.1.el8_1.x86_64  
 
 Установка Virtualbox под Vagrant, ребилдинг ядра под virtualbox  
 	https://www.tecmint.com/install-virtualbox-on-redhat-centos-fedora/  
