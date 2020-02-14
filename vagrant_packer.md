@@ -12,4 +12,4 @@ sudo  unzip packer_1.5.2_linux_amd64.zip -d /usr/local/bin/ && \
 sudo chmod +x /usr/local/bin/packer
 ```
 ## VirtualBox  
-По настройки VmBox отдельный документ [/support/blob/master/virtualbox_vmbox.md](https://github.com/dbudakov/support/blob/master/virtualbox_vmbox.md)  
+По настройки VmBox отдельный документ [/support/virtualbox_vmbox.md](https://github.com/dbudakov/support/blob/master/virtualbox_vmbox.md)  
