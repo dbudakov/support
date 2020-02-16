@@ -95,5 +95,20 @@ VBoxManage --version
 6.0.16r135674
 //Vagrant должен запустить деплой ВМ  
 vagrant up
-vagrant ssh
+vagrant ssh  
+```
+vbox_install_script  
+```bash
+#!/bin/bash
+# https://www.tecmint.com/install-virtualbox-on-redhat-centos-fedora/
+cd /etc/yum.repos.d/ &&
+wget http://download.virtualbox.org/virtualbox/rpm/rhel/virtualbox.repo &&
+yum update -y &&
+yum install binutils  gcc make patch libgomp glibc-headers glibc-devel kernel-headers -y &&
+yum install kernel-devel-`uname -r` -y &&
+yum install gcc perl -y &&
+yum install elfutils-libelf-devel -y &&
+yum install VirtualBox-6.0 -y &&
+/usr/lib/virtualbox/vboxdrv.sh setup  &&
+echo -ne "\e[31mvmbox install (\$?):\e[0m" && echo $? && echo " ";
 ```
