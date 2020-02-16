@@ -97,7 +97,7 @@ VBoxManage --version
 vagrant up
 vagrant ssh  
 ```
-vbox_install_script  
+##### vbox_install_script  
 ```bash
 #!/bin/bash
 # https://www.tecmint.com/install-virtualbox-on-redhat-centos-fedora/
