@@ -4,7 +4,7 @@
 
 # Install the packages required
 yum update
-yum install gcc kernel-devel make
+yum install gcc kernel-devel-`uname -r` make
 
 reboot
 
