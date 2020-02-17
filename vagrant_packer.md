@@ -1,5 +1,6 @@
 ## Vagrant  
 Источник ПО https://www.vagrantup.com/downloads.html  
+Видео урок otus https://www.youtube.com/watch?v=koJ1UpEOcVw&t=4606s
 ```
 wget https://releases.hashicorp.com/vagrant/2.2.7/vagrant_2.2.7_x86_64.rpm  
 rpm -i vagrant_2.2.7_x86_64.rpm  
