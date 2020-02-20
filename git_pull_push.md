@@ -20,4 +20,13 @@
 `git pull <ссылка на репозиторий на сайте GitHub, вида .../support или .../[repository]> master`
 И теперь уже команду `push`
 
+может возникать ошибка в виде:  
+```
+fatal: The current branch master has no upstream branch.  
+To push the current branch and set the remote as upstream, use  
+```
+ошибка возникает из-за привязки на старую ветку github, необходимо выполнить:  
+```
+git push --set-upstream [repo] master
+```
 
