@@ -1,3 +1,3 @@
 #### Источники  
-[Freedom Fox.telegramm](https://t.me/freedom_fox)  
-[Книги для программистов.telegramm] (https://t.me/progbook)  
+[Freedom Fox.telegram](https://t.me/freedom_fox)  
+[Книги для программистов.telegrm](https://t.me/progbook)  
