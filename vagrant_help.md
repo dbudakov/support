@@ -11,7 +11,7 @@ wget --no-check-certificate https://raw.githubusercontent.com/hashicorp/vagrant/
 sudo dd if=/dev/zero of=/EMPTY bs=1M
 sudo rm -f /EMPTY
 ```
-##### 2. Vagrant cloud
+##### 2. vagrant cloud
 [source](https://github.com/dbudakov/1.kernel_update/edit/master/manual/README.md)  
 
 ```
