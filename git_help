@@ -1,0 +1,47 @@
+https://git-scm.com/ - официальный сайт
+https://git-scm.com/book/ru/v2 - книга git Pro
+https://githowto.com/ru - курс обучения
+https://learngitbranching.js.org/ - туториал по branching
+
+VCS (Version conrol system) - распределенная система контроля версий
+```shell
+
+# настройка git
+sudo yum install git -y || sudo apt install git -y # установка
+~/.gitconfig      # конфиг пользователя
+git config --help # команда для редактирования конфига
+git config --global user.name "Petr Petrovich"
+git config --global user.email "petrovich@village.com"
+
+# настройка репозитория  
+git init /path/to/our/project # создаем репозиторий в директории
+git init . # в текущей директории
+в папке назначеной репозиторием cоздается папка `.git`
+
+# добавление
+git status # статус репозитория
+git add <filename> # добавляем файл в git
+git commit -m “Initial commit” # применяем изменения
+git commit -am “Tracked files” # только отслеживаемые (modified/deleted)
+
+# история
+git log # смотрим историю
+git log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short # формат
+git diff <filename> # смотрим изменения между коммитами
+git checkout -- <filename> # откатываем файл до пред. коммита
+git reset --hard <hash> # откатится на два коммита назад
+
+#ветки
+git branch # создание/удаление веток
+git branch develop # создаем ветку
+git checkout develop # переключится на ветку
+git checkout master
+git merge develop # сливаем ветки
+
+# удаленные репозитории
+git remote add origin <url> # привязать у удаленному репозиторию
+git remote -v # инфо
+git push origin master # загрузить в удаленный репозиторий
+git pull # обновить из удаленного репозитория
+git clone # клонировать удаленный репозиторий локально
+```
