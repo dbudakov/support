@@ -1,3 +1,9 @@
+https://www.vagrantup.com/  
+https://app.vagrantup.com/boxes/search -официальный репозиторий box'ов  
+https://github.com/iJackUA/awesome-vagrant - много полезного по Vagrant  
+http://vagrant-lists.github.io/ - большой список плагинов  
+https://tinyurl.com/ya97pbys - Packer  
+
 ##### 1. vagrant package 
 [source](https://sys-adm.in/virtualization/793-sozdanie-vagrant-box-a-shablona-virtualnoj-mashiny-centos-dlya-virtualbox.html)  
 ```shell
