@@ -3,7 +3,7 @@ https://app.vagrantup.com/boxes/search -официальный репозито�
 https://github.com/iJackUA/awesome-vagrant - много полезного по Vagrant  
 http://vagrant-lists.github.io/ - большой список плагинов  
 https://tinyurl.com/ya97pbys - Packer  
-https://drive.google.com/file/d/1jKINQ7oA4FYAqeYROOfrcTvnrSsLTUEo/view - otus  
+https://drive.google.com/file/d/1jKINQ7oA4FYAqeYROOfrcTvnrSsLTUEo/view - otus meth   
 https://github.com/lalbrekht/vagrant/tree/master - otus  
 
 
