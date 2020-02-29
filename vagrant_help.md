@@ -4,6 +4,8 @@ https://github.com/iJackUA/awesome-vagrant - много полезного по 
 http://vagrant-lists.github.io/ - большой список плагинов  
 https://tinyurl.com/ya97pbys - Packer  
 https://drive.google.com/file/d/1jKINQ7oA4FYAqeYROOfrcTvnrSsLTUEo/view - otus  
+https://github.com/lalbrekht/vagrant/tree/master - otus  
+
 
 ##### 1. vagrant package 
 [source](https://sys-adm.in/virtualization/793-sozdanie-vagrant-box-a-shablona-virtualnoj-mashiny-centos-dlya-virtualbox.html)  
