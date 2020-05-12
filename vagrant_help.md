@@ -4,7 +4,8 @@ https://github.com/iJackUA/awesome-vagrant - много полезного по 
 http://vagrant-lists.github.io/ - большой список плагинов  
 https://tinyurl.com/ya97pbys - Packer  
 https://drive.google.com/file/d/1jKINQ7oA4FYAqeYROOfrcTvnrSsLTUEo/view - otus meth   
-https://github.com/lalbrekht/vagrant/tree/master - otus  
+https://github.com/lalbrekht/vagrant/tree/master - otus 
+https://linux-notes.org/rasshirennaya-konfiguratsiya-vagrantfile/ - pro  
 
 
 ##### 1. vagrant package 
