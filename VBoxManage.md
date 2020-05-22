@@ -14,3 +14,8 @@ VBoxManage storageattach $UUID --storagectl SATA --port 1 --device 0 --type dvdd
 VBoxManage registervm     <filename>
 VBoxManage unregistervm   <uuid>|<name> [--delete]
 ```
+
+Для редактирования Host-only Adapter
+```
+file --> Host network manager[Ctrl + H]
+```
