@@ -19,3 +19,9 @@ VBoxManage unregistervm   <uuid>|<name> [--delete]
 ```
 file --> Host network manager[Ctrl + H]
 ```
+Модификация сетевой карты
+```
+VBoxManage modifyvm centralRouter --intnet3 intnet
+VBoxManage modifyvm centralRouter --intnet3 testClient1
+```
+
