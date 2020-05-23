@@ -55,3 +55,9 @@ private:         false
 ...
 providers:       virtualbox
 ```
+
+3.vagrant snapshot
+```
+vagrant snapshot push - создание snapshot'a
+vagrant snapshot pop - откат до состояния snapshot'a
+```
