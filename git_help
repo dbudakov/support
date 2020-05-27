@@ -45,3 +45,7 @@ git push origin master # загрузить в удаленный репозит
 git pull # обновить из удаленного репозитория
 git clone # клонировать удаленный репозиторий локально
 ```
+# pull
+В случае ошибки: "Please, commit your changes or stash them before you can merge."
+git reset --hard
+git checkout -t -f <remote/branch>
