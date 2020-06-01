@@ -17,7 +17,7 @@ vagrant init [name]                                   #создает Vagrantfil
 
 
 #ключ перед упаковкой и пара сlean'ров
-wget --no-check-certificate https://raw.githubusercontent.com/hashicorp/vagrant/master/keys/vagrant.pub -O authorized_keys
+wget --no-check-certificate https://raw.githubusercontent.com/hashicorp/vagrant/master/keys/vagrant.pub -O /home/vagrant/.ssh/authorized_keys
 sudo dd if=/dev/zero of=/EMPTY bs=1M
 sudo rm -f /EMPTY
 ```
