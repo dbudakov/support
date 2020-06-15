@@ -1,0 +1,3 @@
+  yum whatprovides [tools] || yum whatprovides semanage  
+  
+  rpm -Uhv http:// || rpm -i http://  
