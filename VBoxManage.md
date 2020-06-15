@@ -19,6 +19,10 @@ VBoxManage unregistervm   <uuid>|<name> [--delete]
 ```
 file --> Host network manager[Ctrl + H]
 ```
+Создание host-only adapter
+```
+ VBoxManage hostonlyif create
+```
 Модификация сетевой карты
 ```
 VBoxManage modifyvm centralRouter --intnet3 intnet
