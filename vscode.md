@@ -2,7 +2,10 @@
  
 чтобы разрешить вставить JSON нужно активировать workbench.settings.useSplitJSON”: true  
 после нужно прожать Ctrl+Shift+P и ввести User Setings (JSON)  
-  
+
+для отключения регулировки ширины страницы
+        view --> apperance --> centered layout  
+
 json лежит `/home/$USER/.config/Code/User/settings.json`  
 ```
 [
