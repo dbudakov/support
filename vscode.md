@@ -1,5 +1,7 @@
 [shortkey](https://techrocks.ru/2019/11/08/20-vs-code-shortcuts/)  
-  
+ 
+чтобы разрешить вставить JSON нужно активировать workbench.settings.useSplitJSON”: true  
+после нужно прожать Ctrl+Shift+P и ввести User Setings (JSON)  
   
 json лежит `/home/$USER/.config/Code/User/settings.json`  
 ```
