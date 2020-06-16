@@ -11,6 +11,7 @@ rpm -Uhv http:// || rpm -i http://
 Узнать установленные пакеты  
 http://blog.sedicomm.com/2018/02/04/3-sposoba-uznat-vse-ustanovlennye-pakety-v-rhel-centos-i-fedora/
 ```
+## Использую базовые утилиты
 rpm -qa
 yum list installed
 
