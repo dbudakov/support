@@ -20,6 +20,6 @@ yum update && yum install yum-utils
 repoquery -a --installed 
 
 ## Установленные пакеты из определенного репозитория
-  yumdb search from_repo base
+yumdb search from_repo base
   
 ```
