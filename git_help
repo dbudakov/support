@@ -49,3 +49,6 @@ git clone # клонировать удаленный репозиторий л�
 В случае ошибки: "Please, commit your changes or stash them before you can merge."
 git reset --hard
 git checkout -t -f <remote/branch>
+
+# хранение файлов настроек в git
+  https://habr.com/ru/sandbox/36800/
