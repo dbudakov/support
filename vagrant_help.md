@@ -61,3 +61,10 @@ providers:       virtualbox
 vagrant snapshot push - создание snapshot'a
 vagrant snapshot pop --no-delete - откат до состояния snapshot'a
 ```
+
+#### RSA private key
+```
+cat  ~/.vagrant.d/insecure_private_key
+ansible-playbook --private-key=~/.vagrant.d/insecure_private_key -u vagrant -i .vagrant/provisionvers/andible/inventory/vagrnat_ansible_inventory playbook.yml
+```
+
