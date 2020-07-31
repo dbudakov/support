@@ -1,5 +1,10 @@
 [instruction](https://www.virtualbox.org/manual/ch08.html#vboxmanage-modifyvdi)  
 
+## VirtualBox  
+По настройки VmBox отдельный документ [здесь](/support/virtualbox_vmbox.md](https://github.com/dbudakov/support/blob/master/virtualbox_vmbox.md)  
+
+
+
 добавление cd-rom на vm VBoxManage  
 ```shell
 UUID=$(VBoxManage list vms|grep "kel"|awk '{print $2}')
