@@ -7,6 +7,7 @@ https://drive.google.com/file/d/1jKINQ7oA4FYAqeYROOfrcTvnrSsLTUEo/view - otus me
 https://github.com/lalbrekht/vagrant/tree/master - otus 
 https://linux-notes.org/rasshirennaya-konfiguratsiya-vagrantfile/ - pro  
 https://youtu.be/koJ1UpEOcVw - вебинар от Отус
+https://www.vagrantup.com/docs/disks/usage.html - работа с дисками машин  
 
 ## Vagrant  
 Источник ПО https://www.vagrantup.com/downloads.html  
