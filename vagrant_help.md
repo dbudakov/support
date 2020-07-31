@@ -6,9 +6,26 @@ https://tinyurl.com/ya97pbys - Packer
 https://drive.google.com/file/d/1jKINQ7oA4FYAqeYROOfrcTvnrSsLTUEo/view - otus meth   
 https://github.com/lalbrekht/vagrant/tree/master - otus 
 https://linux-notes.org/rasshirennaya-konfiguratsiya-vagrantfile/ - pro  
+https://youtu.be/koJ1UpEOcVw - вебинар от Отус
+
+## Vagrant  
+Источник ПО https://www.vagrantup.com/downloads.html  
+Видео урок otus https://www.youtube.com/watch?v=koJ1UpEOcVw&t=4606s
+```
+wget https://releases.hashicorp.com/vagrant/2.2.7/vagrant_2.2.7_x86_64.rpm  
+rpm -i vagrant_2.2.7_x86_64.rpm  
+```
+##### vagrant_install_script
+```bash  
+#!/bin/bash  
+#mkdir ~/Downloads &&  
+cd ~/Downloads/  
+wget https://releases.hashicorp.com/vagrant/2.2.7/vagrant_2.2.7_x86_64.rpm  
+rpm install vagrant_2.2.7_x86_64.rpm  
+```
 
 
-##### 1. vagrant package 
+##### vagrant package 
 [source](https://sys-adm.in/virtualization/793-sozdanie-vagrant-box-a-shablona-virtualnoj-mashiny-centos-dlya-virtualbox.html)  
 ```shell
 vagrant package --base [UUID] --output [target.box]   #упаковывает выключенную VM
@@ -21,7 +38,7 @@ wget --no-check-certificate https://raw.githubusercontent.com/hashicorp/vagrant/
 sudo dd if=/dev/zero of=/EMPTY bs=1M
 sudo rm -f /EMPTY
 ```
-##### 2. vagrant cloud
+##### vagrant cloud
 [source](https://github.com/dbudakov/1.kernel_update/edit/master/manual/README.md)  
 
 ```
@@ -56,7 +73,7 @@ private:         false
 providers:       virtualbox
 ```
 
-#### 3.vagrant snapshot
+#### vagrant snapshot
 ```
 vagrant snapshot push - создание snapshot'a
 vagrant snapshot pop --no-delete - откат до состояния snapshot'a
