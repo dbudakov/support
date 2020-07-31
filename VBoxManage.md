@@ -1,7 +1,7 @@
 [instruction](https://www.virtualbox.org/manual/ch08.html#vboxmanage-modifyvdi)  
 
 ## VirtualBox  
-По настройки VmBox отдельный документ [здесь](/support/virtualbox_vmbox.md](https://github.com/dbudakov/support/blob/master/virtualbox_vmbox.md)  
+По настройки VmBox отдельный документ [здесь](https://github.com/dbudakov/support/blob/master/virtualbox_vmbox.md)  
 
 
 
