@@ -1,0 +1,9 @@
+Защита RPC [здесь](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/html/security_guide/sec-securing_services#sec-Securing_rpcbind)  
+Защита NFS [здесь](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/html/security_guide/sec-securing_services#sec-Securing_NFS)  
+NFS wdelay. Отвечает за включение опции gathered writes в nfs. Подробности тут: [NFS Illustrated. 8.13 Write Gathering](https://books.google.ru/books?id=IwR5FXFY18MC&pg=PA243&lpg=PA243&dq=GATHERED+WRITES+nfs&source=bl&ots=TqFuN_8bG2&sig=ACfU3U1SCg-ete-6aTNvWTNqjlOOo5sitw&hl=ru&sa=X&ved=2ahUKEwjA7orklqnqAhVVEncKHc6RA28Q6AEwAHoECAoQAQ#v=onepage&q=GATHERED%20WRITES%20nfs&f=false)  
+[FTPS](https://ru.wikipedia.org/wiki/FTPS) -это расширение протокола FTP. [SFTP](https://ru.wikipedia.org/wiki/SFTP) - вообще другой протокол. На слайде ошибки не было, но для полной картины добавить туда FTPS не помешает. Еще [здесь](https://ru.wikipedia.org/wiki/FTP#FTP_%D1%87%D0%B5%D1%80%D0%B5%D0%B7_SSH_(%D0%BD%D0%B5_SFTP))  
+
+
+(https://ru.wikipedia.org/wiki/SFTP)
+(https://ru.wikipedia.org/wiki/FTPS)
+(https://ru.wikipedia.org/wiki/FTP#FTP_%D1%87%D0%B5%D1%80%D0%B5%D0%B7_SSH_(%D0%BD%D0%B5_SFTP))
