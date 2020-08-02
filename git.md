@@ -1,18 +1,18 @@
-https://git-scm.com/ - официальный сайт
-https://git-scm.com/book/ru/v2 - книга git Pro
-https://githowto.com/ru - курс обучения
-https://learngitbranching.js.org/ - туториал по branching
-fork и доработка read-only ветки [здесь](https://git-scm.com/book/ru/v2/GitHub-%D0%92%D0%BD%D0%B5%D1%81%D0%B5%D0%BD%D0%B8%D0%B5-%D1%81%D0%BE%D0%B1%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D0%BE%D0%B3%D0%BE-%D0%B2%D0%BA%D0%BB%D0%B0%D0%B4%D0%B0-%D0%B2-%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D1%8B)
-
-
-
-VCS (Version conrol system) - распределенная система контроля версий
-```shell
-
-# настройка git
-sudo yum install git -y || sudo apt install git -y # установка
-~/.gitconfig      # конфиг пользователя
-git config --help # команда для редактирования конфига
+https://git-scm.com/ - официальный сайт  
+https://git-scm.com/book/ru/v2 - книга git Pro  
+https://githowto.com/ru - курс обучения  
+https://learngitbranching.js.org/ - туториал по branching  
+fork и доработка read-only ветки [здесь](https://git-scm.com/book/ru/v2/GitHub-%D0%92%D0%BD%D0%B5%D1%81%D0%B5%D0%BD%D0%B8%D0%B5-%D1%81%D0%BE%D0%B1%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D0%BE%D0%B3%D0%BE-%D0%B2%D0%BA%D0%BB%D0%B0%D0%B4%D0%B0-%D0%B2-%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D1%8B)  
+  
+  
+  
+VCS (Version conrol system) - распределенная система контроля версий  
+```shell  
+  
+# настройка git  
+sudo yum install git -y || sudo apt install git -y # установка  
+~/.gitconfig      # конфиг пользователя  
+git config --help # команда для редактирования конфига  
 git config --global user.name "Petr Petrovich"
 git config --global user.email "petrovich@village.com"
 
@@ -47,7 +47,7 @@ git remote -v # инфо
 git push origin master # загрузить в удаленный репозиторий
 git pull # обновить из удаленного репозитория
 git clone # клонировать удаленный репозиторий локально
-```
+
 # pull
 В случае ошибки: "Please, commit your changes or stash them before you can merge."
 git reset --hard
@@ -55,3 +55,4 @@ git checkout -t -f <remote/branch>
 
 # хранение файлов настроек в git
   https://habr.com/ru/sandbox/36800/
+```
