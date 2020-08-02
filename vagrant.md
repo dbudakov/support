@@ -8,6 +8,8 @@ https://linux-notes.org/rasshirennaya-konfiguratsiya-vagrantfile/ - pro
 https://youtu.be/koJ1UpEOcVw - вебинар от Отус  
 https://www.vagrantup.com/docs/disks/usage.html - работа с дисками машин    
 https://www.vagrantup.com/docs/provisioning/file.html - provision из файла  
+http://michaelkant.com/blog/wsl-and-you/ - vagrant и Windows
+
 
 ## Vagrant  
 Источник ПО https://www.vagrantup.com/downloads.html  
