@@ -1,14 +1,13 @@
-https://www.vagrantup.com/  
-https://app.vagrantup.com/boxes/search -официальный репозиторий box'ов  
-https://github.com/iJackUA/awesome-vagrant - много полезного по Vagrant  
-http://vagrant-lists.github.io/ - большой список плагинов  
-https://tinyurl.com/ya97pbys - Packer  
-https://drive.google.com/file/d/1jKINQ7oA4FYAqeYROOfrcTvnrSsLTUEo/view - otus meth   
-https://github.com/lalbrekht/vagrant/tree/master - otus 
-https://linux-notes.org/rasshirennaya-konfiguratsiya-vagrantfile/ - pro  
-https://youtu.be/koJ1UpEOcVw - вебинар от Отус
-https://www.vagrantup.com/docs/disks/usage.html - работа с дисками машин  
-https://www.vagrantup.com/docs/provisioning/file.html - provision из файла
+https://www.vagrantup.com/    
+https://app.vagrantup.com/boxes/search -официальный репозиторий box'ов    
+https://github.com/iJackUA/awesome-vagrant - много полезного по Vagrant    
+http://vagrant-lists.github.io/ - большой список плагинов      
+https://drive.google.com/file/d/1jKINQ7oA4FYAqeYROOfrcTvnrSsLTUEo/view - otus meth     
+https://github.com/lalbrekht/vagrant/tree/master - otus   
+https://linux-notes.org/rasshirennaya-konfiguratsiya-vagrantfile/ - pro    
+https://youtu.be/koJ1UpEOcVw - вебинар от Отус  
+https://www.vagrantup.com/docs/disks/usage.html - работа с дисками машин    
+https://www.vagrantup.com/docs/provisioning/file.html - provision из файла  
 
 ## Vagrant  
 Источник ПО https://www.vagrantup.com/downloads.html  
