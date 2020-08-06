@@ -1,0 +1,12 @@
+Отключение считывания usb-накопителей
+cat<<EOF>>/etc/rc.local
+rmmod usb_storage - откл
+EOF
+
+modprobe -r usb_storage - отключение
+insmod usb_storage - включение
+
+Хранение модуля
+  /lib/modules/3.2.0-27-generi/kernel/drivers/usb-storage.ko
+Список исключений
+  /etc/modprobe.d/blacklist
