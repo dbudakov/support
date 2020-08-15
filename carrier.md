@@ -5,3 +5,6 @@
 ### Сертификация
 Red Hat Certified System Administrator (RHCSA) Exam RHEL 7 (EX200V7) [link](https://www.flane.ru/course/redhat-ex200v7#schedule)    
 MikroTik Certified Network Associate (MTCNA) [link](https://www.qtraining.ru/price#form)   
+
+### Авторизованные школы
+VNWARE (link)(https://wsr.pearsonvue.com/testtaker/registration/SelectTestCenterProximity/VMWAREINC?conversationId=6297219)  
