@@ -3,5 +3,5 @@
 
 
 ### Сертификация
-[Red Hat Certified System Administrator (RHCSA) Exam RHEL 7 (EX200V7)](https://www.flane.ru/course/redhat-ex200v7#schedule)    
-[MTCNA](https://www.qtraining.ru/price#form)  
+Red Hat Certified System Administrator (RHCSA) Exam RHEL 7 (EX200V7) [link](https://www.flane.ru/course/redhat-ex200v7#schedule)    
+MTCNA [link](https://www.qtraining.ru/price#form)  
