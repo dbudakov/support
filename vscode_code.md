@@ -2,6 +2,10 @@
 ``` 
   {
   ...
+  
+  // показывает сниппеты, варианты использования команды(функции)
+  "editor.suggest.showSnippets": false,
+  
   // поправка для базового интерпритатора
   "python.defaultInterpreterPath": "python3",
   "python.pythonPath": "python3",
