@@ -2,6 +2,14 @@
 ``` 
   {
   ...
+  // затухающие мигания курсора
+  "editor.cursorBlinking": "phase",
+  
+  // показывает количество пробелов перед строкой
+  "editor.renderWhitespace": "boundary"
+  
+  // убирает всплывающие подсказки
+  "editor.hover.enabled": false,
   
   // показывает сниппеты, варианты использования команды(функции)
   "editor.suggest.showSnippets": false,
