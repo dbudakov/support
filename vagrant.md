@@ -101,3 +101,10 @@ id - Machine id found with vagrant global-status. Using id allows you to call va
 --provision-with x,y,z - This will only run the given provisioners. For example, if you have a :shell and :chef_solo provisioner and run vagrant provision --provision-with shell, only the shell provisioner will be run.
 ```
 
+#### config base port
+```
+Vagrant.configure("2") do |lvm| 
+   ...
+   lvm.vm.network :forwarded_port, guest: 22, host: 2255, id: "ssh", auto_correct: true
+   ...
+```
