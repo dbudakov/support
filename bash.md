@@ -9,3 +9,25 @@ echo ${list[@]}
 echo ${#list[@]}
  3
 ```
+Цепочки  
+```
+true && true  && echo 1 || echo 2 # выведет 1
+true && false && echo 1 || echo 2 # выведет 2
+true && true  && echo 1 || echo 2 && echo 3 # выведет "1 3"
+```
+В случает если есть выбор оптимально прогонять весь список и делать проверку на взведенный флаг
+```sh
+# запрос строки bp_list, в ней содержаться имена для обработки
+bp_list=(api)
+spo_default=(api www setup)
+
+for path in ${spo_default[@]};do
+  if [ $(echo $bp_list|grep -cw $path) -eq 1 ]
+    then
+      tar czpf $dump_path/${path}-$(date +%Y%m%d_%H%M).tar.gz /DATA/$path &>>$dump_path/log/tar_$path.log &&
+      /bin/rm -rf /DATA/$path &&
+    else
+      /bin/rm -rf /DATA/$path &&
+  fi
+done
+```
