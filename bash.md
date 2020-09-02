@@ -15,7 +15,7 @@ true && true  && echo 1 || echo 2 # выведет 1
 true && false && echo 1 || echo 2 # выведет 2
 true && true  && echo 1 || echo 2 && echo 3 # выведет "1 3"
 ```
-В случает если есть выбор оптимально прогонять весь список и делать проверку на взведенный флаг
+В случае если нужно выбрать что обрабатывать оптимально прогонять весь список и делать проверку на взведенный флаг, если бекап снимается в одной операции а удаление в другой, то возможен вариант неконсистентного бекапа и удаление каталога.
 ```sh
 # запрос строки bp_list, в ней содержаться имена для обработки
 bp_list=(api)
@@ -25,9 +25,11 @@ for path in ${spo_default[@]};do
   if [ $(echo $bp_list|grep -cw $path) -eq 1 ]
     then
       tar czpf $dump_path/${path}-$(date +%Y%m%d_%H%M).tar.gz /DATA/$path &>>$dump_path/log/tar_$path.log &&
-      /bin/rm -rf /DATA/$path &&
+      /bin/rm -rf /DATA/$path ||
+      echo false
     else
-      /bin/rm -rf /DATA/$path &&
+      /bin/rm -rf /DATA/$path || 
+      echo false
   fi
 done
 ```
