@@ -33,3 +33,13 @@ for path in ${spo_default[@]};do
   fi
 done
 ```
+Выведет список файлов в `/tmp` и прочитает указанный
+```sh
+select file in /tmp/* Quit;
+do if [ -f $file ]; 
+  then cat $file; 
+  else break; 
+fi; 
+  break;
+done
+```
