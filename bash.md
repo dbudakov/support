@@ -6,6 +6,8 @@
 Условные операторы: `case`, `if`, `test`  
 Операторы цикла: `for`, `while`, `until`, `select`  
 
+Для инклуда библиотечной функции используется команда `source`  
+
 ```sh
 list=(one two three)
 var="two"
