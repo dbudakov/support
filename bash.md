@@ -8,6 +8,25 @@
 
 Для инклуда библиотечной функции используется команда `source`  
 
+Пример [trap'a](https://github.com/dbudakov/support/blob/master/trap.md), дополнительно по [`set`](https://github.com/dbudakov/support/blob/master/set.md)
+```
+if ( set -o noclobber; echo "$$" > "$lockfile") 1> /dev/null; 
+then                                                
+  trap 'rm -f "$lockfile"; exit $?' INT  TERM EXIT  
+  ml                                                
+  sleep 30                                          
+  rm -f "$lockfile"                                 
+  trap - INT TERM EXIT                              
+else                                                
+  echo "program running"                            
+fi 
+```
+```
+trap -lp - вывод номеров и названия сигналов для перехвата
+trap "" 1 2 3 15 - игнорирование следующих сигналов
+```
+
+
 ```sh
 list=(one two three)
 var="two"
