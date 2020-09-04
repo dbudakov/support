@@ -8,7 +8,7 @@
 
 Для инклуда библиотечной функции используется команда `source`  
 
-Пример [`trap`](https://github.com/dbudakov/support/blob/master/trap.md)'a, дополнительно по [`set`](https://github.com/dbudakov/support/blob/master/set.md)
+Пример [`trap`](https://github.com/dbudakov/support/blob/master/trap.md), дополнительно по [`set`](https://github.com/dbudakov/support/blob/master/set.md)
 ```
 if ( set -o noclobber; echo "$$" > "$lockfile") 1> /dev/null; 
 then                                                
