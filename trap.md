@@ -18,6 +18,14 @@ else
   echo "program running"                            
 fi 
 ```
+Прервать установку пакета(.deb)  
+```sh
+trap "kill -9 $$" INT TERM EXIT
+...
+...
+...
+trap - INT TERM EXIT
+```
 ### Дополнительно по trap  
 ```
 trap -lp - вывод номеров и названия сигналов для перехвата
