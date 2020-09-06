@@ -56,3 +56,6 @@ git checkout -t -f <remote/branch>
 # хранение файлов настроек в git
   https://habr.com/ru/sandbox/36800/
 ```
+
+### удалиние репозитория githuub
+[ссылка](https://stackoverflow.com/questions/19319516/how-to-delete-a-github-repo-using-the-api)  
