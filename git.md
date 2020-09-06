@@ -41,7 +41,7 @@ git checkout develop # переключится на ветку
 git checkout master
 git merge develop # сливаем ветки
 
-# удаленные репозитории
+# сетевые репозитории
 git remote add origin <url> # привязать у удаленному репозиторию
 git remote -v # инфо
 git push origin master # загрузить в удаленный репозиторий
