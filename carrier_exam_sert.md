@@ -8,3 +8,7 @@ MikroTik Certified Network Associate (MTCNA) [link](https://www.qtraining.ru/pri
 
 ### Авторизованные школы
 VNWARE [link](https://wsr.pearsonvue.com/testtaker/registration/SelectTestCenterProximity/VMWAREINC?conversationId=6297219)   
+
+
+## Коучинг
+Тома  Леонардо формула успеха  
