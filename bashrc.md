@@ -18,7 +18,6 @@ PS1='\[\033[0;94m\]\u$\[\033[00m\] '
 alias rm='rm -i'
 alias cp='cp -i'
 alias mv='mv -i'
-alias vi='vim'
 
 if [ -f /etc/bashrc ]; then
         . /etc/bashrc
