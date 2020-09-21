@@ -5,6 +5,12 @@ if [ -f /etc/bashrc ]; then
 	. /etc/bashrc
 fi
 
+# Импорт алиасов или переменных
+# if [ -f ~/.bash_aliases ];then
+#    source ~/.bash_aliases
+# fi
+
+
 # user specific environment
 PATH="$HOME/.local/bin:$HOME/bin:$PATH"
 export PATH
