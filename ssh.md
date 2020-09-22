@@ -1,4 +1,4 @@
-[!](https://github.com/dbudakov/support/blob/master/images/ssh_white.jpg)
+[](https://github.com/dbudakov/support/blob/master/images/ssh_white.jpg)
 
 ### SOCKS проксирование
 ```
