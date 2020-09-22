@@ -1,3 +1,5 @@
+[!](https://github.com/dbudakov/support/blob/master/images/ssh_white.jpg)
+
 ### SOCKS проксирование
 ```
 ssh -D localhost:12345 ваше_имя@адрес_удаленного_компьютера
