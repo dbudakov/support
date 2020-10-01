@@ -1,1 +1,1 @@
-`zabbix` for rocketchat [link](https://www.zabbix.com/ru/integrations/rocketchat)  
+__`zabbix`__ for rocketchat [link](https://www.zabbix.com/ru/integrations/rocketchat)  
