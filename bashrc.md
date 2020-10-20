@@ -1,3 +1,10 @@
+### system bashrc
+```
+/etc/profile 
+/etc/profile.d/ 
+/etc/bash.bashrc
+```
+
 ### user
 ```sh
 # Source global definitions
