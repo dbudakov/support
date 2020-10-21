@@ -32,3 +32,8 @@ yumdb search from_repo base
 ```
 yum update [make]
 ```
+Вывести список репозиториев
+```
+yum repolist
+yum repolist enabled
+```
