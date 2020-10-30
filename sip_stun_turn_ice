@@ -1,0 +1,9 @@
+Simple Traversal of UDP tрrough NAT(STUN) - простое прохождение UDP через NAT, основная особенность высылает ответ на запрос сквозь NAT маршрутизатор
+Traversal Using Relays around NAT(TURN) - продолжение протокола STUN, для симетричного NAT(между двумя NAT'ами, за которыми клиенты)
+Interactive Connection Establishment(ICE) -интерактивное установление соединение, анализирует все возможные подключения и выбирает лучшее(без STUN-макс приоритет, STUN-ниже, TURN-самый низкий), не подходит для больших сетей и других показателей
+
+https://voxlink.ru/kb/asterisk-configuration/obzor-protokolov-stun-turn-i-ice-ih-principy-raboty-s-nat-i-ispolzovanie-dlja-voip/
+https://voxlink.ru/kb/linux/turn-server-on-centos/
+https://github.com/otalk/mod_turncredentials/blob/master/mod_turncredentials.lua
+
+по умолчанию используется 3478 порт
