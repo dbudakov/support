@@ -1,4 +1,5 @@
-## CentOS list packages
+## pack version
+ CentOS 
 ```
 rpm -qa <package>
 yum list installed <package>
