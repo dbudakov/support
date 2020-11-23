@@ -1,0 +1,36 @@
+
+yum install wget -y
+wget https://dl.min.io/server/minio/release/linux-amd64/minio
+chmod +x ./minio
+./minio server /date
+
+
+wget https://github.com/minio/minfs/releases/download/RELEASE.2017-02-26T20-20-56Z/minfs-0.0.20170226202056-1.x86_64.rpm
+yum install minfs-0.0.20170226202056-1.x86_64.rpm
+mkdir /etc/minfs
+cat<<EOF>>/etc/minfs/config.js
+{"version":"1","accessKey":"minioadmin","secretKey":"minioadmin"}
+EOF
+
+echo "http://192.168.100.111:9000/sdd /mnt/ minfs defaults,cache=/tmp/sdd 0 0" >> /etc/fstab
+
+sources:
+https://habr.com/ru/company/veeam/blog/517392/
+https://github.com/minio/minfs
+
+
+
+
+
+wget https://dl.min.io/client/mc/release/linux-amd64/mc
+chmod +x mc
+./mc alias set allminio http://192.168.100.111:9000 minioadmin minioadmin
+./mc admin trace --json -a allminio
+./mc admin trace --json -a allminio >>/tmp/logs &
+
+
+https://github.com/minio/minio/tree/master/docs/logging
+mc admin config get allminio/ logger_webhook
+mc admin config set allminio logger_webhook:name1 auth_token="" endpoint="http://192.168.100.201:12201/gelf"
+
+./mc admin service restart allminio
