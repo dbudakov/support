@@ -52,5 +52,7 @@ echo -n "start host: ";read a;vboxmanage startvm $a --type headless
 ```
 echo -n "poweroff host: ";read a;vboxmanage controlvm $a poweroff
 ```  
-
-
+вывести список IP для хоста
+```
+echo -n "guestvm: "; read a; VBoxManage guestproperty enumerate $a | grep IP
+```
