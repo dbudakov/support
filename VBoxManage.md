@@ -35,4 +35,22 @@ file --> Host network manager[Ctrl + H]
 VBoxManage modifyvm centralRouter --intnet3 intnet
 VBoxManage modifyvm centralRouter --intnet3 testClient1
 ```
+### Управление  
+список хостов:  
+```
+vboxmanage list vm
+```  
+переименовать хост :   
+```
+echo -n "host_id or name: "; read a; echo -n "rename to: "; read b; vboxmanage modifyvm $a --name $b;
+```  
+запустить хост:   
+```
+echo -n "start host: ";read a;vboxmanage startvm $a --type headless
+```  
+выключить хост:   
+```
+echo -n "poweroff host: ";read a;vboxmanage controlvm $a poweroff
+```  
+
 
