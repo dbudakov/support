@@ -38,7 +38,7 @@ VBoxManage modifyvm centralRouter --intnet3 testClient1
 ### Управление  
 список хостов:  
 ```
-vboxmanage list vm
+vboxmanage list vms
 ```  
 переименовать хост :   
 ```
