@@ -7,3 +7,6 @@
 ```
 node.name:.*
 ```
+
+### Дополнительно:
+Справочник [regular-expressions](http://www.regular-expressions.info/)
