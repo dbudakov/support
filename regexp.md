@@ -22,7 +22,10 @@ grep -P          ✓          ✓
 sed              ✓          ×
 sed -E           ✓          ×
 ```
-
+Вложенные папки, для путей a/z a/b/z a/b/c/z
+```
+a/**/z 
+```
 
 ### Дополнительно:
 Справочник [regular-expressions](http://www.regular-expressions.info/)
