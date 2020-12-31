@@ -25,7 +25,7 @@ rpm -i vagrant_2.2.7_x86_64.rpm
 #mkdir ~/Downloads &&  
 cd ~/Downloads/  
 wget https://releases.hashicorp.com/vagrant/2.2.7/vagrant_2.2.7_x86_64.rpm  
-rpm install vagrant_2.2.7_x86_64.rpm  
+rpm -i vagrant_2.2.7_x86_64.rpm  
 ```
 
 
