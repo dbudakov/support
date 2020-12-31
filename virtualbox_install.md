@@ -18,9 +18,13 @@ wget http://download.virtualbox.org/virtualbox/rpm/rhel/virtualbox.repo
 Устанавливаем необходимые зависимости:  
 ```
 yum update  
-yum install binutils gcc make patch libgomp glibc-headers glibc-devel kernel-headers  
-kernel-devel
+yum install binutils gcc make patch libgomp glibc-headers glibc-devel kernel-headers kernel-devel
 нет в базовых репозиториях: "yum istall dkms qt"
+
+sudo yum install kernel-debug-devel dkms
+yum install qt5-qtbase-devel
+
+
 ```
 Устанавливаем virtualbox:  
 ```
