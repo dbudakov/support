@@ -51,7 +51,7 @@ Section "Device"
     Option         "UseEDID" "FALSE"
 EndSection
 ```
-**Дополнительно:**
+### Дополнительно
 Cтатьи по теме:
 [ask-ubuntu](https://ask-ubuntu.ru/questions/38434/pochemu-voznikayut-oshibki-xrandr-badmatch-badname-gamma-failed)
 
