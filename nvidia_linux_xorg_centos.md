@@ -29,7 +29,7 @@ yum install nvidia-x11-drv
 #optional
 nvidia-xconfig
 ```
-*!Eсли после перезагрузки* графига не поднялась см. раздел _troubleshooting_  
+*!Eсли после перезагрузки* графика не поднялась см. раздел _troubleshooting_  
 
 
 ### Troubleshooting
@@ -52,7 +52,6 @@ Section "Device"
 EndSection
 ```
 ### Дополнительно  
-Cтатьи по теме: [ask-ubuntu](https://ask-ubuntu.ru/questions/38434/pochemu-voznikayut-oshibki-xrandr-badmatch-badname-gamma-failed)   
 
 При отказе графика, нажмите на кнопку выключения, это обеспечит целостность логов и выберите режим восстановления, в _grub_, при загрузки 
 Файл для анализа логов: _/var/log/Xorg.0.log_  
@@ -116,5 +115,7 @@ Section "Screen"
     EndSubSection
 EndSection
 ```
+Ссылки:
 
-
+Cтатьи по теме: [ask-ubuntu.ru](https://ask-ubuntu.ru/questions/38434/pochemu-voznikayut-oshibki-xrandr-badmatch-badname-gamma-failed)     
+Перевод документации nvidia для linux: [nworld.ru](https://nvworld.ru/articles/linuxtranslate/#39e7a352d35223437abd40bf92589d7e)  
