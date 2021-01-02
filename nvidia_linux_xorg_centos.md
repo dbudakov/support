@@ -101,8 +101,7 @@ Section "Monitor"
   Modeline "1024x768@75"  81.80  1024 1080 1192 1360  768 769 772 802  -HSync +Vsync
   Modeline "1280x1024@76.16"  142.12  1280 1376 1512 1744  1024 1025 1028 1070  -HSync +Vsync
   Modeline "1680x1050@60"  147.14  1680 1784 1968 2256  1050 1051 1054 1087  -HSync +Vsync
-  Modeline "2560x1440@60"  311.83  2560 2744 3024 3488  1440 1441 1444 1490  -HSync +Vsync
-   Gamma    1.0
+    Gamma    1.0
 EndSection
 
 Section "Screen"
@@ -112,8 +111,8 @@ Section "Screen"
     DefaultDepth    24
     SubSection     "Display"
         Depth       24
-        Virtual     2560 1440
-        Modes       "2560x1440@60" "1680x1050@60" "1280x1024@76.16" "800x600@75"
+        Virtual     1680 1050
+        Modes       "1680x1050@60" "1280x1024@76.16" "800x600@75"
     EndSubSection
 EndSection
 ```
