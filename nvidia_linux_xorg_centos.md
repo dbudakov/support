@@ -90,6 +90,16 @@ EndSection
 ```
 
 ```
+Section "Device"
+     Option         "UseEdidDpi"   "FALSE"
+     Option         "DPI"   "96 x 96"
+EndSection
+```
+
+```
+xdpyinfo|grep -B 2 resolution
+
+
 xset -q
 xlsfonts - список известных шрифтов для xorg
 
