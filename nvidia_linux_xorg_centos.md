@@ -78,9 +78,23 @@ xrandr --fb 1900x1200
 
 # Удалить модуль
 xrandr --rmmode 0x2ac
+```
 
-# Вывод дополнительной информации по настроке xorg
+# Шрифты
+[link](https://wiki.archlinux.org/index.php/Font_configuration_(%D0%A0%D1%83%D1%81%D1%81%D0%BA%D0%B8%D0%B9))  
+_xorg.conf_  
+```
+Section "Files"
+    FontPath     "/usr/share/fonts/local/"
+EndSection
+```
+
+```
 xset -q
+xlsfonts - список известных шрифтов для xorg
+
+xset +fp /usr/share/fonts/local/           # Добавляет привычный путь шрифтов в список Xorg'а известных путей шрифтов
+xset -fp /usr/share/fonts/sucky_fonts/     # Удаляет указанный путь шрифта из списка Xorg'а известных путей шрифтов
 ```
 
 Команды для отладки: 
