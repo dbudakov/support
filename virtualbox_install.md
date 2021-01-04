@@ -122,3 +122,8 @@ yum install VirtualBox-6.0 -y &&
 /usr/lib/virtualbox/vboxdrv.sh setup  &&
 echo -ne "\e[31mvmbox install (\$?):\e[0m" && echo $? && echo " ";
 ```
+
+### Extansion pack
+```
+wget https://download.virtualbox.org/virtualbox/6.0.24/Oracle_VM_VirtualBox_Extension_Pack-6.0.24.vbox-extpack
+```
