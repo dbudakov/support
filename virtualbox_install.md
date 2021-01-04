@@ -12,8 +12,11 @@ yum remove VirtualBox*
 ```
 Добавляем репозиторий:   
 ```
-cd /etc/yum.repos.d/  
-wget http://download.virtualbox.org/virtualbox/rpm/rhel/virtualbox.repo  
+# centos
+wget https://download.virtualbox.org/virtualbox/rpm/rhel/virtualbox.repo -P /etc/yum.repos.d/
+
+# fedora
+# wget https://download.virtualbox.org/virtualbox/rpm/fedora/virtualbox.repo -P /etc/yum.repos.d/
 ```
 Устанавливаем необходимые зависимости:  
 ```
@@ -106,8 +109,10 @@ vagrant ssh
 ```bash
 #!/bin/bash
 # https://www.tecmint.com/install-virtualbox-on-redhat-centos-fedora/
-cd /etc/yum.repos.d/ &&
-wget http://download.virtualbox.org/virtualbox/rpm/rhel/virtualbox.repo &&
+wget https://download.virtualbox.org/virtualbox/rpm/rhel/virtualbox.repo -P /etc/yum.repos.d/ &&
+
+# fedora
+# wget https://download.virtualbox.org/virtualbox/rpm/fedora/virtualbox.repo  -P /etc/yum.repos.d/ &&
 yum update -y &&
 yum install binutils  gcc make patch libgomp glibc-headers glibc-devel kernel-headers -y &&
 yum install kernel-devel-`uname -r` -y &&
