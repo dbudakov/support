@@ -2,14 +2,6 @@
 ```js
 "[json]":{"editor.quickSuggestions": {"strings": true},"editor.suggest.insertMode": "replace"}
 
-/*
- * "[json]": {
- *   "editor.quickSuggestions": {
- *     "strings": true
- *   },
- *   "editor.suggest.insertMode": "replace"
- * }
- */
 ```
 
 settings.json  
