@@ -23,7 +23,7 @@ settings.json
     //"markdown.preview.fontSize": 14,
     "editor.mouseWheelZoom": true, //mouse zoom
     "editor.tabSize": 2,
-    "workbench.colorTheme": "Ayu Mirage",
+    "workbench.colorTheme": "Ayu Mirage Bordered",
     "editor.formatOnSave": true,
     "workbench.iconTheme": "file-icons",
     "workbench.settings.useSplitJSON": true,
