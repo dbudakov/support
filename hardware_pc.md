@@ -1,4 +1,4 @@
-Спецификации процессоров Ryzen [link](https://www.amd.com/ru/partner/processor-specifications)  
+Спецификации процессоров **AMD** [link](https://www.amd.com/ru/partner/processor-specifications)  
 
 Информация о материнской плате:  
 `cat /sys/devices/virtual/dmi/id/board_*`
