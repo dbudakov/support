@@ -3,3 +3,6 @@
 
 Информация о памяти  
 `dmidecode -t memory`
+
+Кол-во каналов:  
+`sudo dmidecode -t memory | grep CHANNEL`
