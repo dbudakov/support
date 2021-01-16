@@ -25,7 +25,7 @@ settings.json
     "editor.tabSize": 2,
     "workbench.colorTheme": "Ayu Mirage Bordered",
     "editor.formatOnSave": true,
-    "workbench.iconTheme": "file-icons",
+    "workbench.iconTheme": "vs-seti",
     "workbench.settings.useSplitJSON": true,
 }
 ```
