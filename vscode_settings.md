@@ -29,9 +29,17 @@ settings.json
     "editor.formatOnSave": true,
     "editor.insertSpaces": false,
     "editor.tabSize": 4,
-    
+    "editor.quickSuggestionsDelay": 100,
+
+
     "workbench.colorTheme": "Ayu Mirage Bordered",
     "workbench.iconTheme": "vs-seti",
     "workbench.settings.useSplitJSON": true,
+    
+    "C_Cpp.updateChannel": "Insiders",
+    "launch": {
+        "configurations": [],
+        "compounds": []
+    }
 }
 ```
