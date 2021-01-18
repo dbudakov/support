@@ -8,12 +8,14 @@ settings.json
 ```
 {
     "window.zoomLevel": 0,
+    
     "files.insertFinalNewline": true, // insert one line in the end file
     "files.trimFinalNewlines": true, // delete all lines in the end, after final line
     "files.trimTrailingWhitespace": true, // save last space
-    "editor.wordWrap": "on", //wrap lines
+    
     "explorer.confirmDelete": false, // quest befor delete file
     "explorer.confirmDragAndDrop": false, // quest befor draganddrop file
+    
     ////ignore sync settings
     //@sync-ignore
     //"editor.fontSize": 14,
@@ -21,10 +23,14 @@ settings.json
     //"terminal.integrated.fontSize": 14,
     //@sync-ignore
     //"markdown.preview.fontSize": 14,
+    
+    "editor.wordWrap": "on", //wrap lines
     "editor.mouseWheelZoom": true, //mouse zoom
-    "editor.tabSize": 2,
-    "workbench.colorTheme": "Ayu Mirage Bordered",
     "editor.formatOnSave": true,
+    "editor.insertSpaces": false,
+    "editor.tabSize": 4,
+    
+    "workbench.colorTheme": "Ayu Mirage Bordered",
     "workbench.iconTheme": "vs-seti",
     "workbench.settings.useSplitJSON": true,
 }
