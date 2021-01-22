@@ -4,7 +4,7 @@ https://itproffi.ru/generatsiya-i-ispolzovanie-ssl-sertifikatov-v-linux/
 https://itproffi.ru/ustanovka-ssl-sertifikata-na-nginx/
 
 cгенерировал для rcmon.global.bcs
-openssl req -batch -new -newkey rsa:2048 -nodes -keyout cert.key -subj '/C=RU/O=BCS/OU=IT/CN=rcmon.global.bcs' -out cert.csr
+openssl req -batch -new -newkey rsa:2048 -nodes -keyout cert.key -subj '/C=RU/O=org/OU=ou/CN=serv.domain2.domain1' -out cert.csr
 
 снять пароль с ключа сертификата
 http://gtalex.ru/kak-ubrat-vvod-parolya-enter-pem-pass-phrase-pri-perezapuske-nginx
