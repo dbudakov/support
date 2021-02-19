@@ -113,3 +113,6 @@ compgen -A function -abck отобразит все вышеперечислен
 ```
 
 declare и typeset - объявление переменных [linik](https://www.opennet.ru/docs/RUS/bash_scripting_guide/x4704.html)  
+
+
+`echo $HISTORYCONTROL` -  ignoredups, ignoreboth:erasedups

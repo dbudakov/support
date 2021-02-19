@@ -45,3 +45,35 @@ yum update [make]
 yum repolist
 yum repolist enabled
 ```
+
+Посмотреть версии пакетов
+
+```sh
+yum --showduplicates list mongodb-org
+```
+
+Подключение, отключение репозиториев:
+
+```sh
+yum-config-manager --enable docker-ce-test
+yum-config-manager --disable docker-ce-nightly
+```
+
+GPG
+
+```sh
+# Проверка пакета
+rpm -K epel-release-latest-8.noarch.rpm 
+
+# Импорт открытого ключа
+rpm --import RPM-GPG-KEY-EPEL-8 
+
+# Вывод списка ключей
+rpm -qa gpg-pubkey*
+
+# Информация о ключе
+rpm -qi gpg-pubkey-2f86d6a1-5cf7cefb
+
+# Удаление ключа
+sudo rpm -e gpg-pubkey-2f86d6a1-5cf7cefb
+```
