@@ -4,3 +4,8 @@
 ```bash
 cat /path/to/source.file | sed -n 10,15p
 ```
+
+Вывод номера строки
+```
+sed '26!D' /path/to/file
+```
