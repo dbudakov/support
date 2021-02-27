@@ -39,3 +39,11 @@ set smartindent
 # Подсветка синтаксиса
 syntax on  
 ```
+
+## colorscheme  
+
+```
+:colorscheme desert
+:colorscheme ron
+:colorscheme slate
+```
