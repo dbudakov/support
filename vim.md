@@ -7,7 +7,9 @@
 set colorcolumn=80  
 
 "Цветовая схема
-colorscheme torte                                                               
+colorscheme pablo
+"colorscheme ron
+"colorscheme torte                                                               
 
 "Нумерация строк
 set nu           
@@ -30,7 +32,7 @@ set softtabstop=4
 "Количество пробелов которыми символ табуляции отображается в тексте. 
 set tabstop=4                                                          
 
-"Копирует отступы с тукущей строки при добавлении новой
+"Копирует отступы с тeкущей строки при добавлении новой
 set autoindent                                          
 
 "Делает то же что и autoindent плюс автоматически выставляет отступы в "нужных" местах. 
