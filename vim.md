@@ -46,4 +46,7 @@ syntax on
 :colorscheme desert
 :colorscheme ron
 :colorscheme slate
+
+:colorscheme delec
+:colorscheme pablo
 ```
