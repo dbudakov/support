@@ -13,3 +13,8 @@ cat /tmp/1| awk '/'$a'/{print $a}'
 # awk 'b=$a'
 # awk -v b=$a
 ```
+
+Вывод номера строки:
+```
+awk '(NR == 26)' /path/to/file
+```
