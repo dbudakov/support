@@ -43,10 +43,10 @@ syntax on
 ## colorscheme  
 
 ```
-:colorscheme desert
 :colorscheme ron
-:colorscheme slate
-
-:colorscheme delec
 :colorscheme pablo
+
+:colorscheme desert
+:colorscheme slate
+:colorscheme delek
 ```
