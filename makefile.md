@@ -127,5 +127,15 @@ $^ Список всех зависимостей обрабатываемого
 ```
 
 ### Дополнительно
-книга про gcc: [twirpx](https://www.twirpx.org/file/2101475/grant/)  
+книга про gcc: 
+[twirpx](https://www.twirpx.org/file/2101475/grant/)    
 
+сайты: 
+[dimaru.github.io](https://dimaru.github.io/make-doc/make.html)  
+[rus-linux.net](http://rus-linux.net/nlib.php?name=/MyLDP/algol/gnu_make/gnu_make_3-79_russian_manual.html#SEC101)  
+
+спец переменные:   
+[www.gnu.org](https://www.gnu.org/software/make/manual/html_node/Automatic-Variables.html)  
+
+Linux Makefiles:  
+[linoxide.com](https://linoxide.com/how-tos/learn-linux-makefiles/)  
