@@ -129,6 +129,7 @@ $^ Список всех зависимостей обрабатываемого
 ### Дополнительно
 книга про gcc:  
 [twirpx](https://www.twirpx.org/file/2101475/grant/)    
+[linux.yaroslavl.ru](http://linux.yaroslavl.ru/docs/prog/gnu_make_3-79_russian_manual.html#SEC6)  
 
 сайты:  
 [dimaru.github.io](https://dimaru.github.io/make-doc/make.html)  
