@@ -9,3 +9,8 @@ cat /path/to/source.file | sed -n 10,15p
 ```
 sed '26!D' /path/to/file
 ```
+
+Вырезать все после символа
+```
+sed -r 's/W.+//' file
+```
