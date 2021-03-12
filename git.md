@@ -73,6 +73,7 @@ lrwxrwxrwx.  1 user user ${date} .git -> ../git_path
 # exclude patterns (uncomment them if you want to use them):
 # *.[oa]
 # *~
+/etc/*-
 /etc/motd
 /etc/namedb
 /etc/.pwd.lock
@@ -91,6 +92,7 @@ lrwxrwxrwx.  1 user user ${date} .git -> ../git_path
 /var/lib/system-config.git/
 /**/.local/share/mc/
 /**/.cache
+
 ```
 
 ### удалиние репозитория github
