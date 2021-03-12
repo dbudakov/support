@@ -4,10 +4,10 @@ https://githowto.com/ru - курс обучения
 https://learngitbranching.js.org/ - туториал по branching  
 [fork](https://git-scm.com/book/ru/v2/GitHub-%D0%92%D0%BD%D0%B5%D1%81%D0%B5%D0%BD%D0%B8%D0%B5-%D1%81%D0%BE%D0%B1%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D0%BE%D0%B3%D0%BE-%D0%B2%D0%BA%D0%BB%D0%B0%D0%B4%D0%B0-%D0%B2-%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D1%8B) - fork и доработка read-only ветки    
   
-  
+## Кратрая информация
   
 VCS (Version conrol system) - распределенная система контроля версий  
-```shell  
+```sh
   
 # настройка git  
 sudo yum install git -y || sudo apt install git -y # установка  
@@ -57,5 +57,41 @@ git checkout -t -f <remote/branch>
   https://habr.com/ru/sandbox/36800/
 ```
 
-### удалиние репозитория githuub
+## Организация при помощи ссылки
+
+Можно реализовать каталог `.git` как ссылку на каталог в другом месте например
+```sh
+lrwxrwxrwx.  1 user user ${date} .git -> ../git_path
+```
+
+## Исключения для корневой папки
+
+```conf
+# git ls-files --others --exclude-from=.git/info/exclude
+# Lines that start with '#' are comments.
+# For a project mostly in C, the following would be a good set of
+# exclude patterns (uncomment them if you want to use them):
+# *.[oa]
+# *~
+/etc/motd
+/etc/namedb
+/etc/.pwd.lock
+/etc/adjtime
+/etc/ld.so.cache
+/etc/lvm/backup
+/etc/lvm/archive
+/etc/mtab
+/etc/ssh/ssh_host_*
+/root/.ssh/known_hosts
+/root/bak
+/**/*.db
+/**/.*history
+/**/.lesshst
+/**/.viminfo
+/var/lib/system-config.git/
+/**/.local/share/mc/
+/**/.cache
+```
+
+### удалиние репозитория github
 [ссылка](https://stackoverflow.com/questions/19319516/how-to-delete-a-github-repo-using-the-api)  
