@@ -52,9 +52,7 @@ bind '"\C-l"':"\"clear; printf \'\\\033[01;91m[%s]\\\033[01;00m\\\n\' $(date +%T
 #bind '"\C-l"':"\" clear; echo -e \'\\\033[01;91m[$(date +%T)]\\\033[01;00m\' \C-m\""
 ```
 
-### bashrc
-
-Модифицированный ввод, отображающий текущий каталог  и ветку гит
+### user@host:path (git branch)$ 
 
 ```sh
 # takes a number argument of the number of last dirs to show
@@ -85,4 +83,22 @@ export PS1="\[\033[0;91m\]\u@\h\[\033[00m\]:\[\033[01;34m\] \$(DIR_LAST 2)\[\033
 
 # two line with time in first 
 #export PS1="\e]2;[\u@\h]\a[\e[31;1m\t\e[0m]\n\[\033[0;91m\]\u@\h\[\033[00m\]:\[\033[01;34m\] \$(DIR_LAST 2)\[\033[00m\]$(parse_git_branch)\[\033[00m\]: "
+```
+
+### code_return
+```sh
+GREEN="\e[0;32m"
+RED="\e[01;91m"
+WHITE="\e[0m"
+function code_return {
+	if (( $? == 0 ))
+	then
+		echo -en "${GREEN}√${WHITE}"
+		# echo -en "${GREEN}$?${WHITE}"
+	else
+		echo -en "${RED}x${WHITE}"
+		# echo -en "${RED}$?${WHITE}"
+	fi
+}
+export PS1='[$(code_return)]$'
 ```
