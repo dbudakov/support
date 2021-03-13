@@ -102,3 +102,9 @@ function code_return {
 }
 export PS1='[$(code_return)]$'
 ```
+
+### more var
+
+```sh
+PS1='\[\e[0;32m\][ $? \[\e[0;33m\]\t \[\e[0;32m\]\u \[\e[0;33m\]\w \[\e[0;32m\]] \$ \[\e[0m\]'
+```
