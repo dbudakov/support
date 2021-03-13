@@ -1,3 +1,6 @@
+## link
+[linuxcofig](https://linuxconfig.org/bash-prompt-basics)  
+
 ### system bashrc
 ```
 /etc/profile 
