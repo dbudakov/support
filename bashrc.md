@@ -1,5 +1,6 @@
 ## link
-[linuxcofig](https://linuxconfig.org/bash-prompt-basics)  
+[linuxcofig.org](https://linuxconfig.org/bash-prompt-basics)  
+(habr.com)(https://habr.com/ru/post/269967/)  
 
 ### system bashrc
 ```
