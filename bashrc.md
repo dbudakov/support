@@ -42,11 +42,10 @@ export PATH="/usr/local/bin:$PATH"
 PS1='\[\033[0;91m\]\u>\[\033[00m\] '
 ```
 
-### bind
+### bind ^L = clear && date
 
 [humbug.in](http://www.humbug.in/2010/custom-key-bindings-keyboard-shortcuts-in-bash/)  
 
-Очистка экрана и вывод времени, цвет(01;91m)
 ```sh
 bind '"\C-l"':"\"clear; printf \'\\\033[01;91m[%s]\\\033[01;00m\\\n\' $(date +%T) \C-m\""
 #bind '"\C-l"':"\" clear; echo -e \'\\\033[01;91m[$(date +%T)]\\\033[01;00m\' \C-m\""
@@ -86,6 +85,7 @@ export PS1="\[\033[0;91m\]\u@\h\[\033[00m\]:\[\033[01;34m\] \$(DIR_LAST 2)\[\033
 ```
 
 ### code_return
+
 ```sh
 GREEN="\e[0;32m"
 RED="\e[01;91m"
