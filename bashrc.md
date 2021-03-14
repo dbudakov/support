@@ -52,7 +52,8 @@ PS1='\[\033[0;91m\]\u>\[\033[00m\] '
 
 ```sh
 bind '"\C-l"':"\"clear; printf \'\\\033[01;91m[%s]\\\033[01;00m\\\n\' $(date +%T) \C-m\""
-#bind '"\C-l"':"\" clear; echo -e \'\\\033[01;91m[$(date +%T)]\\\033[01;00m\' \C-m\""
+# bind '"\C-l"':"\"clear; printf \'[%s]\\\n\' $(date +%T) \C-m\""
+# bind '"\C-l"':"\" clear; echo -e \'\\\033[01;91m[$(date +%T)]\\\033[01;00m\' \C-m\""
 ```
 
 ### [code_return]user@host:path (git branch)$ 
