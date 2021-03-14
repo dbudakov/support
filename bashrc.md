@@ -105,7 +105,7 @@ function code_return {
 	fi
 }
 export PS1='[$(code_return)]$'
-#export PS1='[$(code_return)]\[\033[0;91m\]\u@\h\[\033[00m\]:\[\033[01;34m\] $(DIR_LAST 2)\[\033[00m\]$(parse_git_branch)\[\033[00m\]: '
+#export PS1='[$(code_return)]\[\033[0;91m\]\u@\h\[\033[00m\]:\[\033[01;34m\]$(DIR_LAST 2)\[\033[00m\]$(parse_git_branch)\[\033[00m\]$ '
 ```
 
 ### more var
