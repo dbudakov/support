@@ -91,9 +91,10 @@ export PS1="\[\033[0;91m\]\u@\h\[\033[00m\]:\[\033[01;34m\] \$(DIR_LAST 2)\[\033
 ### code_return
 
 ```sh
-GREEN="\e[0;32m"
-RED="\e[01;91m"
-WHITE="\e[0m"
+PS1='\[\033[0;94m\]\u$\[\033[00m\] '
+GREEN="\[\033[0;32m\]"
+RED="\[\033[01;91m\]"
+WHITE="\[\033[00m\]"
 function code_return {
 	if (( $? == 0 ))
 	then
