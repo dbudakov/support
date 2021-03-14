@@ -55,7 +55,7 @@ bind '"\C-l"':"\"clear; printf \'\\\033[01;91m[%s]\\\033[01;00m\\\n\' $(date +%T
 #bind '"\C-l"':"\" clear; echo -e \'\\\033[01;91m[$(date +%T)]\\\033[01;00m\' \C-m\""
 ```
 
-### user@host:path (git branch)$ 
+### [code_return]user@host:path (git branch)$ 
 
 ```sh
 # takes a number argument of the number of last dirs to show
@@ -68,8 +68,8 @@ function DIR_LAST {
     if (( $start <= 1 )); then
         start=1
         echo -n /
-	else
-		echo -n ../
+        else
+                echo -n ../
     fi
     for (( i = $start; $i < $len; i++ )); do
         if (( $i > $start )); then
@@ -78,35 +78,33 @@ function DIR_LAST {
         echo -n ${array[$i]}
     done
 }
+
 parse_git_branch() {
 git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/'
 }
-printf "%s\n" $(date +%T)
-export PS1="\[\033[0;91m\]\u@\h\[\033[00m\]:\[\033[01;34m\] \$(DIR_LAST 2)\[\033[00m\]$(parse_git_branch)\[\033[00m\]: "
 
-# two line with time in first 
-#export PS1="\e]2;[\u@\h]\a[\e[31;1m\t\e[0m]\n\[\033[0;91m\]\u@\h\[\033[00m\]:\[\033[01;34m\] \$(DIR_LAST 2)\[\033[00m\]$(parse_git_branch)\[\033[00m\]: "
-```
+PROMPT_COMMAND=__prompt_command # Func to gen PS1 after CMDs
+__prompt_command() {
+    local EXIT="$?"             # This needs to be first
+    PS1=""
 
-### code_return
+    local color_zero='\[\e[0m\]'
 
-```sh
-PS1='\[\033[0;94m\]\u$\[\033[00m\] '
-GREEN="\[\033[0;32m\]"
-RED="\[\033[01;91m\]"
-WHITE="\[\033[00m\]"
-function code_return {
-	if (( $? == 0 ))
-	then
-		echo -en "${GREEN}√${WHITE}"
-		# echo -en "${GREEN}$?${WHITE}"
-	else
-		echo -en "${RED}x${WHITE}"
-		# echo -en "${RED}$?${WHITE}"
-	fi
+    local color_red='\[\e[0;31m\]'
+    local color_green='\[\e[0;32m\]'
+    #local BYel='\[\e[1;33m\]'
+    #local BBlu='\[\e[1;34m\]'
+    #local Pur='\[\e[0;35m\]'
+
+    if [ $EXIT != 0 ]; then
+        PS1+="[${color_red}x${color_zero}]"      # Add red if exit code non 0
+    else
+        PS1+="[${color_green}√${color_zero}]"
+    fi
+
+    #PS1+="${RCol}@${BBlu}\h ${Pur}\W${BYel}$ ${RCol}"
+    PS1+="\[\033[0;91m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\$(DIR_LAST 2)\[\033[00m\]$(parse_git_branch)\[\033[00m\]$ "
 }
-export PS1='[$(code_return)]$'
-#export PS1='[$(code_return)]\[\033[0;91m\]\u@\h\[\033[00m\]:\[\033[01;34m\]$(DIR_LAST 2)\[\033[00m\]$(parse_git_branch)\[\033[00m\]$ '
 ```
 
 ### more var
