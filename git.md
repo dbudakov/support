@@ -92,8 +92,14 @@ lrwxrwxrwx.  1 user user ${date} .git -> ../git_path
 /var/lib/system-config.git/
 /**/.local/share/mc/
 /**/.cache
-
 ```
+
+## Исключения ссылок
+
+```sh
+find . -type l | sed -e s'/^\.\///g' >> .gitignore
+```
+
 
 ### удалиние репозитория github
 [ссылка](https://stackoverflow.com/questions/19319516/how-to-delete-a-github-repo-using-the-api)  
