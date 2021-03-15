@@ -94,7 +94,7 @@ lrwxrwxrwx.  1 user user ${date} .git -> ../git_path
 /**/.cache
 ```
 
-## Исключения ссылок
+## Исключение ссылок
 
 ```sh
 find . -type l | sed -e s'/^\.\///g' >> .gitignore
