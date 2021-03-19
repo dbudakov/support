@@ -54,7 +54,7 @@ syntax on
 ```
 ## select range
 ```vim
-command! -range v call setpos('.', [0,<line1>,0,0]) |
+command! -range V call setpos('.', [0,<line1>,0,0]) |
                     \ exe "normal V" |
                     \ call setpos('.', [0,<line2>,0,0])
 ```                    
@@ -74,62 +74,6 @@ augroup END
 noremap <silent> ,cc :<C-B>silent <C-E>s/^/<C-R>=escape(b:comment_leader,'\/')<CR>/<CR>:nohlsearch<CR>
 noremap <silent> ,cu :<C-B>silent <C-E>s/^\V<C-R>=escape(b:comment_leader,'\/')<CR>//e<CR>:nohlsearch<CR>
 ```
-
-## again comments
-```vim
-let s:comment_map = { 
-    \   "c": '\/\/',
-    \   "cpp": '\/\/',
-    \   "go": '\/\/',
-    \   "java": '\/\/',
-    \   "javascript": '\/\/',
-    \   "lua": '--',
-    \   "scala": '\/\/',
-    \   "php": '\/\/',
-    \   "python": '#',
-    \   "ruby": '#',
-    \   "rust": '\/\/',
-    \   "sh": '#',
-    \   "desktop": '#',
-    \   "fstab": '#',
-    \   "conf": '#',
-    \   "profile": '#',
-    \   "bashrc": '#',
-    \   "bash_profile": '#',
-    \   "mail": '>',
-    \   "eml": '>',
-    \   "bat": 'REM',
-    \   "ahk": ';',
-    \   "vim": '"',
-    \   "tex": '%',
-    \ }
-
-function! ToggleComment()
-    if has_key(s:comment_map, &filetype)
-        let comment_leader = s:comment_map[&filetype]
-        if getline('.') =~ "^\\s*" . comment_leader . " " 
-            " Uncomment the line
-            execute "silent s/^\\(\\s*\\)" . comment_leader . " /\\1/"
-        else 
-            if getline('.') =~ "^\\s*" . comment_leader
-                " Uncomment the line
-                execute "silent s/^\\(\\s*\\)" . comment_leader . "/\\1/"
-            else
-                " Comment the line
-                execute "silent s/^\\(\\s*\\)/\\1" . comment_leader . " /"
-            end
-        end
-    else
-        echo "No comment leader found for filetype"
-    end
-endfunction
-
-nnoremap cc :call ToggleComment()<cr>
-vnoremap cu :call ToggleComment()<cr>
-"nnoremap <leader><Space> :call ToggleComment()<cr>
-"vnoremap <leader><Space> :call ToggleComment()<cr>
-```
-
 ## custom comments
 ```vim
 function! ToggleComment()                                                       
@@ -174,3 +118,27 @@ vnoremap <leader>c :call ToggleComment()<cr>
 nnoremap <leader>d :call ToggleUnComment()<cr>                                  
 vnoremap <leader>d :call ToggleUnComment()<cr> 
 ```
+
+### source
+```vim
+function! ToggleComment()
+    if has_key(s:comment_map, &filetype)
+        let comment_leader = s:comment_map[&filetype]
+        if getline('.') =~ "^\\s*" . comment_leader . " " 
+            " Uncomment the line
+            execute "silent s/^\\(\\s*\\)" . comment_leader . " /\\1/"
+        else 
+            if getline('.') =~ "^\\s*" . comment_leader
+                " Uncomment the line
+                execute "silent s/^\\(\\s*\\)" . comment_leader . "/\\1/"
+            else
+                " Comment the line
+                execute "silent s/^\\(\\s*\\)/\\1" . comment_leader . " /"
+            end
+        end
+    else
+        echo "No comment leader found for filetype"
+    end
+endfunction
+```
+
