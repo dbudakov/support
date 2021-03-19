@@ -60,7 +60,7 @@ command! -range Vis call setpos('.', [0,<line1>,0,0]) |
 ```                    
 
 ## comments
-```vi
+```vim
 " Commenting blocks of code, `,cc` - comment, `,cu` - uncomment
 augroup commenting_blocks_of_code
   autocmd!
