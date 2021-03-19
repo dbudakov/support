@@ -76,6 +76,33 @@ noremap <silent> ,cu :<C-B>silent <C-E>s/^\V<C-R>=escape(b:comment_leader,'\/')<
 ```
 ## custom comments
 ```vim
+let s:comment_map = {                                                           
+    \   "c": '\/\/',                                                            
+    \   "cpp": '\/\/',                                                          
+    \   "go": '\/\/',                                                           
+    \   "java": '\/\/',                                                         
+    \   "javascript": '\/\/',                                                   
+    \   "lua": '--',                                                            
+    \   "scala": '\/\/',                                                        
+    \   "php": '\/\/',                                                          
+    \   "python": '#',                                                          
+    \   "ruby": '#',                                                            
+    \   "rust": '\/\/',                                                         
+    \   "sh": '#',                                                              
+    \   "desktop": '#',                                                         
+    \   "fstab": '#',                                                           
+    \   "conf": '#',                                                            
+    \   "profile": '#',                                                         
+    \   "bashrc": '#',                                                          
+    \   "bash_profile": '#',                                                    
+    \   "mail": '>',                                                            
+    \   "eml": '>',                                                             
+    \   "bat": 'REM',                                                           
+    \   "ahk": ';',                                                                
+    \   "vim": '"',                                                                
+    \   "tex": '%',                                                             
+    \ }                    
+    
 function! ToggleComment()                                                       
     if has_key(s:comment_map, &filetype)                                        
         let comment_leader = s:comment_map[&filetype]                           
