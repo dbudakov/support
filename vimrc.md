@@ -1,6 +1,6 @@
 # vim
 
-```conf
+```vim
 ".vimrc
 
 " на 80 колонке будет выделять ячейку другим цветом
@@ -44,7 +44,7 @@ syntax on
 
 ## colorscheme  
 
-```
+```vim
 :colorscheme ron
 :colorscheme pablo
 
@@ -53,7 +53,7 @@ syntax on
 :colorscheme delek
 ```
 ## select range
-```
+```vim
 command! -range Vis call setpos('.', [0,<line1>,0,0]) |
                     \ exe "normal V" |
                     \ call setpos('.', [0,<line2>,0,0])
@@ -76,7 +76,7 @@ noremap <silent> ,cu :<C-B>silent <C-E>s/^\V<C-R>=escape(b:comment_leader,'\/')<
 ```
 
 ## again comments
-```
+```vim
 let s:comment_map = { 
     \   "c": '\/\/',
     \   "cpp": '\/\/',
