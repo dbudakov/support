@@ -2,4 +2,5 @@
 [13 Linux Performance Monitoring Tools – Part 2](https://www.tecmint.com/linux-performance-monitoring-tools/)   
 
 tools: 
-https://github.com/stolk/freqtop
+https://github.com/stolk/freqtop  
+glances
