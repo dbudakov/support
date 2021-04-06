@@ -5,7 +5,7 @@
 <https://itproffi.ru/generatsiya-i-ispolzovanie-ssl-sertifikatov-v-linux/>  
 <https://itproffi.ru/ustanovka-ssl-sertifikata-na-nginx/>  
 
-cгенерировал для serv.domain2.domain1
+cгенерировал для serv.domain2.domain1  
 
 ```sh
 openssl req -batch -new -newkey rsa:2048 -nodes -keyout cert.key -subj '/C=RU/O=org/OU=ou/CN=rc.home.org' -out cert.csr
@@ -13,7 +13,7 @@ openssl req -batch -new -newkey rsa:2048 -nodes -keyout cert.key -subj '/C=RU/O=
 
 ## Снять пароль с ключа сертификата
 
-<http://gtalex.ru/kak-ubrat-vvod-parolya-enter-pem-pass-phrase-pri-perezapuske-nginx>
+<http://gtalex.ru/kak-ubrat-vvod-parolya-enter-pem-pass-phrase-pri-perezapuske-nginx>  
 
 ```sh
 cp server.key server.key.org
@@ -22,8 +22,8 @@ openssl rsa -in server.key.org -out server.key
 
 ## Дополнительно по созданию сертификата
 
-Создаём ключи: `openssl ecparam -genkey -name prime256v1 | openssl ec -out private.key`
-Создаём сертификат по ключу: `openssl req -new -x509 -days 3650 -key private.key -out public.crt`
+Создаём ключи: `openssl ecparam -genkey -name prime256v1 | openssl ec -out private.key`  
+Создаём сертификат по ключу: `openssl req -new -x509 -days 3650 -key private.key -out public.crt`  
 
 ## Генерация `.pem` файла
 
