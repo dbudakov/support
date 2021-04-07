@@ -7,14 +7,19 @@ user@192.168.1.2# iperf3 -c 192.168.1.1
 ```
 
 ```sh
-user@192.168.1.1# iperf3 -s -p 1000
+user@192.168.1.1# iperf3 -s -p 10000
 
 # test tcp
-user@192.168.1.2# iperf3 -c 192.168.1.1 -p 100007
+user@192.168.1.2# iperf3 -c 192.168.1.1 -p 10000
 
 # test udp
 user@192.168.1.2# iperf3 -c 192.168.1.1 -p 10000 -u
 ```
+
+```
+iperf -c 192.168.1.1 -p 10000 -t 120 -P 4 # за две минуты в 4 потока
+```
+
 
 ## How to check UDP/10000 connectivity
 
