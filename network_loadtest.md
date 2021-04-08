@@ -1,6 +1,6 @@
 # network test
 
-# loadtest
+## iperf3
 ```
 user@192.168.1.1# iperf3 -s
 user@192.168.1.2# iperf3 -c 192.168.1.1
@@ -16,6 +16,8 @@ user@192.168.1.2# iperf3 -c 192.168.1.1 -p 10000
 user@192.168.1.2# iperf3 -c 192.168.1.1 -p 10000 -u
 ```
 
+## iperf
+iperf: <https://reks.biz/?p=923>  
 ```
 iperf -c 192.168.1.1 -p 10000 -t 120 -P 4 # за две минуты в 4 потока
 ```
