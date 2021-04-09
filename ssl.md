@@ -5,6 +5,13 @@
 <https://itproffi.ru/generatsiya-i-ispolzovanie-ssl-sertifikatov-v-linux/>  
 <https://itproffi.ru/ustanovka-ssl-sertifikata-na-nginx/>  
 
+
+Прочитать сертификат
+
+```sh
+openssl x509 -in  certificate.crt -text -noout
+```
+
 cгенерировал для serv.domain2.domain1  
 
 ```sh
@@ -30,6 +37,7 @@ openssl rsa -in server.key.org -out server.key
 ```sh
 #Генерируем:
 openssl req -new -x509 -nodes -out server.crt -keyout server.key
+openssl req -newkey rsa:2048 -new -nodes -x509 -days 3650 -keyout mongo.key -out mongo.crt
 
 # Записываем в один файл:
 cat server.key > /etc/ssl/mytest.loc.pem
