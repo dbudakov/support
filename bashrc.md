@@ -113,3 +113,9 @@ __prompt_command() {
 ```sh
 PS1='\[\e[0;32m\][ $? \[\e[0;33m\]\t \[\e[0;32m\]\u \[\e[0;33m\]\w \[\e[0;32m\]] \$ \[\e[0m\]'
 ```
+
+### editor
+
+```sh
+export EDITOR=vim
+```
