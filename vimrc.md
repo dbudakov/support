@@ -75,6 +75,7 @@ noremap <silent> ,cc :<C-B>silent <C-E>s/^/<C-R>=escape(b:comment_leader,'\/')<C
 noremap <silent> ,cu :<C-B>silent <C-E>s/^\V<C-R>=escape(b:comment_leader,'\/')<CR>//e<CR>:nohlsearch<CR>
 ```
 ## custom comments
+[stackoverflow](https://stackoverflow.com/questions/1676632/whats-a-quick-way-to-comment-uncomment-lines-in-vim)  
 ```vim
 let s:comment_map = {                                                           
     \   "c": '\/\/',                                                            
@@ -139,7 +140,8 @@ function! ToggleUnComment()
         echo "No comment leader found for filetype"                             
     end                                                                         
 endfunction                                                                     
-                                                                                
+
+"It is \c, \d
 nnoremap <leader>c :call ToggleComment()<cr>                                    
 vnoremap <leader>c :call ToggleComment()<cr>                                    
 nnoremap <leader>d :call ToggleUnComment()<cr>                                  
