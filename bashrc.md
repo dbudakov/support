@@ -76,6 +76,7 @@ function DIR_LAST {
         if (( $i > $start )); then
             echo -n /
         fi
+	# write [$i + 1] for print 1 level path
         echo -n ${array[$i]}
     done
 }
