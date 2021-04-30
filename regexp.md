@@ -24,12 +24,17 @@ sed 's/hello/'\''hello'\''/' file.txt
             [[:digit:]]    \d
 grep -E          ✓          ×
 grep -P          ✓          ✓
-sed              ✓          ×
+sed              ✓          × 
 sed -E           ✓          ×
 ```
 Вложенные папки, для путей a/z a/b/z a/b/c/z
 ```
 a/**/z 
+```
+
+Только цифры
+```
+grep -E ^[[:digit:]]+$
 ```
 
 ### Дополнительно:
