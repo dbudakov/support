@@ -27,3 +27,8 @@ file1 -ef file2 - файл1 — это жесткая ссылка на файл
 • -gt — больше;
 • -ge — больше или равно.
 ```
+
+Отрицание  
+```
+[[ ! -f /var/log/scheduler/message_read_receipt.log ]]
+```
