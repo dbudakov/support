@@ -21,6 +21,9 @@ rpm -Uhv http:// || rpm -i http://
 rpm -qa
 yum list installed
 
+# Проверить есть пакет или нет
+rpm -qi wget
+
 ## Через yum-utils   
 yum update && yum install yum-utils
 repoquery -a --installed 
