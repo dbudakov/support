@@ -116,3 +116,12 @@ declare и typeset - объявление переменных [linik](https://w
 
 
 `echo $HISTORYCONTROL` -  ignoredups, ignoreboth:erasedups
+
+### Многострочный комментарий
+```
+
+:<<EOF
+...
+EOF
+
+```
