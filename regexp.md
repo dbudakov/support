@@ -37,5 +37,10 @@ a/**/z
 grep -E ^[[:digit:]]+$
 ```
 
+Несколько символов - квантификатор, пример 3 любых цифры
+```sh
+grep -E '[[:digit:]]{3}'
+```
+
 ### Дополнительно:
 Справочник [regular-expressions](http://www.regular-expressions.info/)
