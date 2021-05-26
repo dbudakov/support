@@ -18,3 +18,8 @@ cat /tmp/1| awk '/'$a'/{print $a}'
 ```
 awk '(NR == 26)' /path/to/file
 ```
+
+Суммируем 3-й столбец из лог файла.
+```
+cat logfile| awk '{s += $3} END {print s}'
+```
