@@ -14,3 +14,8 @@ sed '26!D' /path/to/file
 ```
 sed -r 's/W.+//' file
 ```
+
+Вставить после строки
+```
+sed '14a\ hello' /path/file
+```
