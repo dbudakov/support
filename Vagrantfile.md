@@ -1,6 +1,6 @@
-# Vagrantfile provision
+# Vagrantfile
 
-```shell
+```sh
 # -*- mode: ruby -*-
 # vi: set ft=ruby:
 home = ENV['HOME']
