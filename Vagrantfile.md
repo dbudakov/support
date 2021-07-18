@@ -1,4 +1,4 @@
-# Vagrantfile
+# Vagrantfile provision
 
 ```sh
 # -*- mode: ruby -*-
