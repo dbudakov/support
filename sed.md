@@ -19,3 +19,17 @@ sed -r 's/W.+//' file
 ```
 sed '14a\ hello' /path/file
 ```
+
+```sh
+cat<<EOF>/tmp/file
+one
+one,two
+one,two,three
+EOF
+
+# Изменить one на BANG если НЕ строка содержит two И не содержит three
+sed -Ee '/two|three/! s/one/BANG/' /tmp/file
+
+# Изменить one на BANG если строка содержит two И не содержит three
+sed -e '/two/!n' -e '/three/! s/one/BANG/' /tmp/file
+```
