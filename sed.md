@@ -27,9 +27,9 @@ one,two
 one,two,three
 EOF
 
-# Изменить one на BANG если НЕ строка содержит two И не содержит three
+# Изменить one на BANG если строка НЕ содержит two И не содержит three
 sed -Ee '/two|three/! s/one/BANG/' /tmp/file
 
-# Изменить one на BANG если строка содержит two И не содержит three
+# Изменить one на BANG если строка содержит two И НЕ содержит three
 sed -e '/two/!n' -e '/three/! s/one/BANG/' /tmp/file
 ```
