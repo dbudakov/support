@@ -33,3 +33,9 @@ sed -Ee '/two|three/! s/one/BANG/' /tmp/file
 # Изменить one на BANG если строка содержит two И НЕ содержит three
 sed -e '/two/!n' -e '/three/! s/one/BANG/' /tmp/file
 ```
+
+Поиск по типу файла
+```
+find ./ -type
+find ./ --mime-type
+```
