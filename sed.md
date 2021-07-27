@@ -20,6 +20,7 @@ sed -r 's/W.+//' file
 sed '14a\ hello' /path/file
 ```
 
+И, ИЛИ для sed
 ```sh
 cat<<EOF>/tmp/file
 one
