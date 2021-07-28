@@ -22,17 +22,14 @@ sed '14a\ hello' /path/file
 
 И, ИЛИ для sed
 ```sh
-cat<<EOF>/tmp/file
+cat<<EOF>file
 one
 one,two
 one,two,three
 EOF
 
-# Изменить one на BANG если строка НЕ содержит two И не содержит three
-sed -Ee '/two|three/! s/one/BANG/' /tmp/file
-
 # Изменить one на BANG если строка содержит two И НЕ содержит three
-sed -e '/two/!n' -e '/three/! s/one/BANG/' /tmp/file
+sed -e '/two/ {/three/! {s/one/BANG/}}' file
 ```
 
 Поиск по типу файла
