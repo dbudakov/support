@@ -12,4 +12,4 @@ https://www.percona.com/blog/2020/03/26/split-brain-101-what-you-should-know/
 https://docs.mongodb.com/manual/reference/write-concern/  
 
 Утилиты  
-blog.rueckstiess.com/mtools/index.html
+https://blog.rueckstiess.com/mtools/index.html
