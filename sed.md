@@ -37,3 +37,9 @@ sed -e '/two/ {/three/! {s/one/BANG/}}' file
 find ./ -type
 find ./ --mime-type
 ```
+
+Регулярка для ip  
+```
+sed -n '/\([0-9]\{1,3\}\.\)\{3\}[0-9]\{1,3\}/p' file
+sed -rn '/([0-9]{1,3}\.){3}[0-9]{1,3}/p' file
+```
