@@ -6,7 +6,7 @@ cat logfile| awk '{s += $3} END {print s}'
 ```sh
 echo -e "1\n2\n3\n4\n5" >> /tmp/1
 a=3
-cat /tmp/1| awk '/'$a'/{print $a}'
+cat /tmp/1| awk -v b=${a}  '/'$a'/ {print $b}'
 
 # Уточнить эти моменты
 # a=8
