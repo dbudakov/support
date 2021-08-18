@@ -44,7 +44,8 @@ grep -E '[[:digit:]]{3}'
 
 IP_ADD
 ```
-IP_ADD=$(ip ad | awk -F'[ /]' '/'$(ip ad | awk -F'[: ]' '/^2:/ {print $3}')'/ && /inet/ {print $6}')
+NUM_INTERFACE=3
+IP_ADD=$(ip ad | awk -F'[ /]' '/'$(ip ad | awk -v a=${NUM_INTERFACE} -F'[: ]' '/^2:/ {print $a}')'/ && /inet/ {print $6}')
 ```
 
 Вложенные переменные
