@@ -42,5 +42,10 @@ grep -E ^[[:digit:]]+$
 grep -E '[[:digit:]]{3}'
 ```
 
+IP_ADD
+```
+IP_ADD=$(ip ad | awk -F'[ /]' '/'$(ip ad | awk -F'[: ]' '/^2:/ {print $3}')'/ && /inet/ {print $6}')
+```
+
 ### Дополнительно:
 Справочник [regular-expressions](http://www.regular-expressions.info/)
