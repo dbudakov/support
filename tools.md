@@ -13,4 +13,7 @@ git:
 [lazygit](https://github.com/jesseduffield/lazygit)  
 
 npm:
-[npm](https://github.com/jesseduffield/lazynpm)
+[lazynpm](https://github.com/jesseduffield/lazynpm)
+
+containerd, analog docker:  
+[lima](https://gitlab.freedesktop.org/lima), [lima](https://medium.com/nttlabs/containerd-and-lima-39e0b64d2a59)  
