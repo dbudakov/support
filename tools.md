@@ -15,5 +15,11 @@ git:
 npm:
 [lazynpm](https://github.com/jesseduffield/lazynpm)
 
-containerd, analog docker:  
-[lima](https://gitlab.freedesktop.org/lima), [lima](https://medium.com/nttlabs/containerd-and-lima-39e0b64d2a59)  
+containerd, analog docker: [lima](https://gitlab.freedesktop.org/lima), [lima](https://medium.com/nttlabs/containerd-and-lima-39e0b64d2a59)  
+
+file manager(console): [broot](https://computingforgeeks.com/broot-easy-directory-trees-navigation-in-linux/)  
+```
+alias cat=`bat`
+alias ls=`exa`
+alias ll=`ekza --long --grid`
+```
