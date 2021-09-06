@@ -8,3 +8,9 @@ mongodb:
 
 docker: 
 [lazydocker](https://github.com/jesseduffield/lazydocker)
+
+git: 
+[lazygit](https://github.com/jesseduffield/lazygit)  
+
+npm:
+[npm](https://github.com/jesseduffield/lazynpm)
