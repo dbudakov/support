@@ -29,8 +29,8 @@ cat logfile| awk '{s += $3} END {print s}'
 echo "one two three" |
 awk '{
   for(i=1;i<=NF;i++){
-	  if (NF == 1)
-		    printf "[%s]", $i;
+    if (NF == 1)
+	printf "[%s]", $i;
     else if ($i == $1)
       printf "[%s, ", $i;
     else if ($i == $NF)
