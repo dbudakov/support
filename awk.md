@@ -23,3 +23,19 @@ awk '(NR == 26)' /path/to/file
 ```
 cat logfile| awk '{s += $3} END {print s}'
 ```
+
+создание объектрого массива, условия певрого, последнего элементов
+```
+echo "one two three" |
+awk '{
+  for(i=1;i<=NF;i++){
+	  if (NF == 1)
+		    printf "[%s]", $i;
+    else if ($i == $1)
+      printf "[%s, ", $i;
+    else if ($i == $NF)
+      printf "%s]", $i;
+    else
+      printf "%s, ", $i}
+}'
+ ```
