@@ -29,8 +29,14 @@ export PATH="/usr/local/bin:$PATH"
 
 PS1='\[\033[0;94m\]\u$\[\033[00m\] '
 
+#radio-t
+alias cat=`bat`
+alias ls=`exa`
+alias ll=`ekza --long --grid`
+
+# git
 alias pgit='git add .; git commit -m "next"; git push'
-alias fget='pgit; git fetch; git pull'
+alias fgit='pgit; git fetch; git pull'
 
 ```
 ### root
