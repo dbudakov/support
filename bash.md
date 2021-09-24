@@ -125,3 +125,10 @@ declare и typeset - объявление переменных [linik](https://w
 EOF
 
 ```
+Имя функции изнутри
+```
+func(){
+  echo $FUNCNAME
+}
+func
+```
