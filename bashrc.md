@@ -37,6 +37,7 @@ alias ll=`ekza --long --grid`
 # git
 alias pgit='git add .; git commit -m "next"; git push'
 alias fgit='pgit; git fetch; git pull'
+alias gclean='git clean -xf'
 
 ```
 ### root
