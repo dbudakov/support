@@ -1,3 +1,8 @@
+Посмотреть адрес удаленного репозитория
+```
+git remote show origin
+```
+
 https://git-scm.com/ - официальный сайт  
 https://git-scm.com/book/ru/v2 - книга git Pro  
 https://githowto.com/ru - курс обучения  
