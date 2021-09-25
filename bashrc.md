@@ -33,6 +33,7 @@ PS1='\[\033[0;94m\]\u$\[\033[00m\] '
 alias cat=`bat`
 alias ls=`exa`
 alias ll=`ekza --long --grid`
+alias mc='broot'
 
 # git
 alias pgit='git add .; git commit -m "next"; git push'
