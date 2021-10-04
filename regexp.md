@@ -49,7 +49,7 @@ ip ad | awk -F '[ /]' '/[[:digit:]]{1,3}\.[[:digit:]]{1,3}\.[[:digit:]]{1,3}\.[[
 
 // get ip interface
 i=eth1
-ip ad | awk -F '[ /]' '/'$i'/ && /[[:digit:]]{1,3}\.[[:digit:]]{1,3}\.[[:digit:]]{1,3}\.[[:digit:]]{1,3}/ {print $6}'
+ip_add=$(ip ad | awk -F '[ /]' '/'$i'/ && /[[:digit:]]{1,3}\.[[:digit:]]{1,3}\.[[:digit:]]{1,3}\.[[:digit:]]{1,3}/ {print $6}')
 ```
 
 Вложенные переменные
