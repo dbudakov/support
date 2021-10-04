@@ -43,9 +43,13 @@ grep -E '[[:digit:]]{3}'
 ```
 
 IP_ADD
-```
-NUM_INTERFACE=3
-IP_ADD=$(ip ad | awk -F'[ /]' '/'$(ip ad | awk -F'[: ]' '/^'$NUM_INTERFACE':/ {print $3}')'/ && /inet/ {print $6}')
+```sh
+# show all ip
+ip ad | awk -F '[ /]' '/[[:digit:]]{1,3}\.[[:digit:]]{1,3}\.[[:digit:]]{1,3}\.[[:digit:]]{1,3}/ {print $6}'
+
+// get ip interface
+i=eth1
+ip ad | awk -F '[ /]' '/'$i'/ && /[[:digit:]]{1,3}\.[[:digit:]]{1,3}\.[[:digit:]]{1,3}\.[[:digit:]]{1,3}/ {print $6}'
 ```
 
 Вложенные переменные
