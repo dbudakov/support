@@ -48,8 +48,8 @@ IP_ADD
 ip ad | awk -F '[ /]' '/[[:digit:]]{1,3}\.[[:digit:]]{1,3}\.[[:digit:]]{1,3}\.[[:digit:]]{1,3}/ {print $NF": "$6}'| column -t
 
 // get ip interface
-i=eth1
-ip_add=$(ip ad | awk -F '[ /]' '/'$i'/ && /[[:digit:]]{1,3}\.[[:digit:]]{1,3}\.[[:digit:]]{1,3}\.[[:digit:]]{1,3}/ {print $6}')
+interface=eth1
+ip_add=$(ip ad | awk -F '[ /]' '/'$interface'/ && /[[:digit:]]{1,3}\.[[:digit:]]{1,3}\.[[:digit:]]{1,3}\.[[:digit:]]{1,3}/ {print $6}')
 ```
 
 Вложенные переменные
