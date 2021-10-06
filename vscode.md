@@ -1,10 +1,10 @@
-icons
+## icons
 
-ctrl+shift+p -> theme icon -> seti  
-[seti](https://www.youtube.com/watch?v=mlW5BUOfGcQ)  
+ctrl+shift+p -> theme icon -> seti   
+[seti](https://www.youtube.com/watch?v=mlW5BUOfGcQ)    
 
-theme
-ayu mirage borden
+## theme  
+ayu mirage borden  
 
 При некорректном выделении текста курсором проверить настроку  
 ```
