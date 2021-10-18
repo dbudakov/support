@@ -45,6 +45,7 @@ grep -E '[[:digit:]]{3}'
 IP_ADD
 ```sh
 # show all ip
+hostname -I 
 ip ad | awk -F '[ /]' '/[[:digit:]]{1,3}\.[[:digit:]]{1,3}\.[[:digit:]]{1,3}\.[[:digit:]]{1,3}/ {print $NF": "$6}'| column -t
 
 // get ip interface
