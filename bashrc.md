@@ -29,6 +29,9 @@ export PATH="/usr/local/bin:$PATH"
 
 PS1='\[\033[0;94m\]\u$\[\033[00m\] '
 
+# system
+suspend() { i=$1; while [ $i -ne 0 ]; do ((i--)); sleep 1; done; systemctl suspend; }
+
 #radio-t
 alias cat=`bat`
 alias ls=`exa`
@@ -39,7 +42,6 @@ alias mc='broot'
 alias pgit='git add .; git commit -m "next"; git push'
 alias fgit='pgit; git fetch; git pull'
 alias gclean='git clean -xf'
-alias suspend='sleep $1 && systemctl suspend'
 
 ```
 ### root
