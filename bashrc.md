@@ -39,6 +39,7 @@ alias mc='broot'
 alias pgit='git add .; git commit -m "next"; git push'
 alias fgit='pgit; git fetch; git pull'
 alias gclean='git clean -xf'
+alias suspend='sleep $1 && systemctl suspend'
 
 ```
 ### root
