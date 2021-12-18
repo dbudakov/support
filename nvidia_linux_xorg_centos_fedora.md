@@ -2,10 +2,10 @@
 
 ### Fedora 
 
-## priority:  
+#### priority:  
 <https://www.if-not-true-then-false.com/2015/fedora-nvidia-guide/>
 
-## second var:  
+#### second var:  
 ```
 #!/bin/bash
 # https://www.easycoding.org/2017/01/11/pravilnaya-ustanovka-drajverov-nvidia-v-fedora.html
