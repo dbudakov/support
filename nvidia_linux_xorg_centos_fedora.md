@@ -2,7 +2,9 @@
 
 ### Fedora 
 
-#### priority: <https://www.if-not-true-then-false.com/2015/fedora-nvidia-guide/>
+#### priority var: 
+
+<https://www.if-not-true-then-false.com/2015/fedora-nvidia-guide/>
 
 #### second var:  
 ```
