@@ -33,8 +33,8 @@ PS1='\[\033[0;94m\]\u$\[\033[00m\] '
 suspend() { i=$1; while [ $i -ne 0 ]; do ((i--)); sleep 1; done; systemctl suspend; }
 
 #radio-t
-alias cat='bat'
-alias ls='exa'
+alias less='bat'
+#alias ls='exa'
 alias ll='exa --long --grid'
 alias mc='broot'
 
