@@ -12,8 +12,8 @@
 
 //.config/Code/User/settings.json
 
+//.config/Code/User/settings.json
 {
-    "window.zoomLevel": -2,
     "files.insertFinalNewline": true, // insert one line in the end file
     "files.trimFinalNewlines": true, // delete all lines in the end, after final line
     "files.trimTrailingWhitespace": true, // save last space
@@ -26,11 +26,11 @@
     //"terminal.integrated.fontSize": 14,
     //@sync-ignore
     //"markdown.preview.fontSize": 14,
-    "editor.wordWrap": "on", //wrap lines
+    "editor.wordWrap": "off", // умещать строку в окне
     "editor.mouseWheelZoom": true, //mouse zoom
     "editor.formatOnSave": true,
     "editor.insertSpaces": false,
-    "editor.tabSize": 4,
+    "editor.tabSize": 2,
     "editor.quickSuggestionsDelay": 1000,
     "workbench.colorTheme": "Ayu Mirage Bordered",
     "workbench.iconTheme": "vs-seti",
@@ -41,7 +41,8 @@
         "compounds": []
     },
     "[markdown]": {
-        "files.trimTrailingWhitespace": false
+        "files.trimTrailingWhitespace": false,
+        "editor.wordWrap": "off", // умещать строку в окне
     },
     "markdownlint.config": {
         //https://github.com/DavidAnson/vscode-markdownlint#configure
@@ -49,6 +50,7 @@
         "no-hard-tabs": false
     },
 }
+
 ```
 
 ## Debugger
