@@ -7,3 +7,12 @@ PS1='\[\033[0;94m\]\u$\[\033[00m\] '
   [0;94m] - 0 - вид шрифка(жирность), 94 - цвет шрифта(94-light blue, 31-red)  
 
 ```
+
+```bash
+# current path, no more than 8 characters
+ft_path(){ 
+    pwd | 
+    awk -F / '{if (length($NF) > 8) print substr($NF,1,6)"*"substr($NF,length($NF),length($NF)); else printf $NF}';
+}
+PS1='\[\033[0;94m\]$(ft_path)$ \[\033[00m\]'
+```
