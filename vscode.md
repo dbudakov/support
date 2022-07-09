@@ -10,4 +10,8 @@ ayu mirage borden
 ```
 Editor: Column Selection
 Enable that the selection with the mouse and keys is doing column selection.
+// отключение обводки(подсветки) вокруг текста
+
+"editor.unicodeHighlight.ambiguousCharacters": false
+
 ```
