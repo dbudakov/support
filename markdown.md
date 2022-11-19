@@ -1,7 +1,10 @@
+Актуальный редактор
+---------------------
+[stackedit](https://stackedit.io/app#)  
+
 Шпаргалка по Markdown
 ---------------------
-
-(перевод, [оригинал](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet))
+[оригинал](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet))
 
 Поиграть с разметкой Markdown можно на [демо-странице](http://www.markdown-here.com/livedemo.html).
 
