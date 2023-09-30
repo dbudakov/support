@@ -1,0 +1,23 @@
+#!/bin/bash
+RES=~/.local/tmp_1
+
+a=$(pwd|awk -F "/" '{print $NF}')
+if [ -z $1 ]
+        then
+         	echo "Waiting vagrant status..."
+         	vagrant status|awk '/virtualbox/ {print $1}'>$RES
+        	if [ 1 == $(cat $RES|wc -l) ]
+                	then
+                  		id=$(cat $RES)
+	       		else
+	        		echo -e "\e[31mwhich is up?\e[0m"
+				cat $RES|nl
+			        echo -n "print number(1 or 2 or ...):"
+		                read u
+			        id=$(cat $RES|nl|grep "     $u"|awk '{print $2}')
+        	fi
+        else
+                id=$(VBoxManage list vms|awk '/'$1'/ {print $2}')
+fi
+VBoxManage controlvm $id poweroff
+

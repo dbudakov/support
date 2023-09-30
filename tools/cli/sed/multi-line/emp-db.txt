@@ -1,0 +1,6 @@
+Name: Alex
+Department: Tech
+EmpId: 100
+Name: George
+Department: HR
+EmpId: 500

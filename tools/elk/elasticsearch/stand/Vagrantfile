@@ -1,0 +1,25 @@
+# -*- mode: ruby -*-
+# vi: set ft=ruby:
+Vagrant.configure("2") do |config|
+    config.vm.define "elastic" do |os|
+        os.vm.box = "centos/7"
+        os.vm.host_name = "elastic"
+        os.vm.network  "private_network", ip: '192.168.100.101'
+        os.vm.provider :virtualbox do |vb|
+            vb.name = "elastic"
+            vb.customize ["modifyvm", :id, "--memory", "1024"]
+            vb.customize ["modifyvm", :id, "--cpus", "1"]
+        end
+#        os.vm.provision "shell", inline: <<SHELL
+#SHELL
+        os.vm.provision "ansible" do |ansible|
+            #ansible.verbose = "vvv"
+            ansible.playbook = "playbooks/elastic_single.yml"
+            ansible.become = "true"
+        end
+    end
+## Устанавливаем связь между каталогом "./src" хост-системы
+## и каталогом "/home/vagrant" гостевой системы.
+#		config.vm.synced_folder "./src", "/home/vagrant"
+end
+

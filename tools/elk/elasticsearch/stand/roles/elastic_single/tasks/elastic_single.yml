@@ -1,0 +1,66 @@
+- name: include vars
+  include_vars:
+    file: ../vars/host.yml
+
+- name: "Install elasticsearch.repo"
+  template:
+    src: "../templates/elasticsearch.repo"
+    dest: "/etc/yum.repos.d/"
+    owner: "root"
+    group: "root"
+    mode: 0644
+
+- name: Install package elasticsearch-7.10.0-1
+  yum:
+    name: elasticsearch-7.10.0-1
+    enablerepo: elasticsearch
+    state: present
+
+- name: "Set node.name"
+  replace:
+    dest: "{{ elk_file }}"
+    regexp: ^#?node.name:.*
+    replace: "node.name: {{ node_name }}"
+
+- name: "Set network.host"
+  replace:
+    dest: "{{ elk_file }}"
+    regexp: ^#?network.host:.*
+    replace: "network.host: {{ network_host }}"
+
+- name: "Set http.port"
+  replace:
+    dest: "{{ elk_file }}"
+    regexp: ^#?http.port:.*
+    replace: "http.port: {{ http_port }}"
+
+- name: "Comment old parametr discovery.type"
+  replace:
+    dest: "{{ elk_file }}"
+    regexp: ^#?discovery.*
+    replace: "discovery.type: single-node"
+
+### Проверка на наличие строк в файле limints.conf ###
+- name: checking for limits.conf
+  shell: grep "elasticsearch - nproc 4096" /etc/security/limits.conf | wc -l
+  register: test_grep
+
+- name: "save debug_message"
+  debug:
+    msg: "{{test_grep.stdout}}"
+### Конец проверки ###
+
+- name: "Set limits in /etc/security/limits.conf"
+  lineinfile:
+    path: /etc/security/limits.conf
+    #insertbefore: "End of file"
+    line: |
+      elasticsearch - nproc 4096
+      elasticsearch - nofile 65536
+  when: test_grep.stdout == "0"
+
+- name: "Enable and start elasticsearch.service"
+  systemd:
+    name: elasticsearch.service
+    state: started
+    enabled: yes

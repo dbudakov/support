@@ -1,0 +1,17 @@
+#!/bin/sh
+  
+cat<<EOF>~/.bashrc
+
+alias vi='vim'
+alias rm='rm -i'
+alias cp='cp -i'
+alias mv='mv -i'
+
+if [ -f /etc/bashrc ]; then
+        . /etc/bashrc
+fi
+PATH="\$HOME/.local/bin:\$HOME/bin:\$PATH"
+export PATH
+export PATH="/usr/local/bin:\$PATH"
+PS1='\[\033[0;91m\]\u>\[\033[00m\] '
+EOF

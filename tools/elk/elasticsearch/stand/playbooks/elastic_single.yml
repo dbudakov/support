@@ -1,0 +1,11 @@
+- name: "Start role elastic-single"
+  hosts:
+    - elastic
+  gather_facts: false
+  become: true
+  roles:
+    - role: roles
+  tasks:
+    - include: ../roles/elastic_single/tasks/elastic_single.yml
+#  handlers:
+#    - include: ../roles/handlers/all_handlers.yml

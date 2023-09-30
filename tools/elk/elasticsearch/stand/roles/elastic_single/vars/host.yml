@@ -1,0 +1,5 @@
+elk_file: /etc/elasticsearch/elasticsearch.yml
+node_name: node-1
+network_host: 192.168.100.101
+http_port: 9200
+#node: $(grep 'node.name:' /etc/elasticsearch/elasticsearch.yml)

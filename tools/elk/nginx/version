@@ -1,0 +1,4 @@
+nginx version: nginx/1.16.1
+
+yum list install nginx: 
+nginx.x86_64 1:1.16.1-2.el7 @epel

@@ -1,0 +1,27 @@
+# -*- mode: ruby -*-
+# vi: set ft=ruby:
+
+cpu = "1"
+mem = "512"
+box = "centos/7"
+hostname = ""
+network = ''
+network_vlan = "private_network"
+
+Vagrant.configure("2") do |config|
+        config.vm.define "os" do |os|
+                os.vm.box = box
+                os.vm.host_name = hostname
+                os.vm.network  network_vlan, ip: network
+                os.vm.provider :virtualbox do |vb|
+                        vb.name = name_host
+                        vb.customize ["modifyvm", :id, "--memory", mem]
+                        vb.customize ["modifyvm", :id, "--cpus", cpu]
+                end
+                os.vm.provision "shell", inline: <<SHELL
+SHELL
+        end
+## Устанавливаем связь между каталогом "./src" хост-системы
+## и каталогом "/home/vagrant" гостевой системы.
+#               config.vm.synced_folder "./src", "/home/vagrant"
+end
