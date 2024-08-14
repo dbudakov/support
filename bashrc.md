@@ -123,6 +123,38 @@ __prompt_command() {
 }
 ```
 
+### PS1 from 14.08.2024
+
+```bash
+# current path, no more than 8 characters
+ft_path(){ 
+    pwd | 
+    awk -F / '{if (length($NF) > 8) print substr($NF,1,6)"*"substr($NF,length($NF),length($NF)); else printf $NF}';
+}
+
+# rc in prefix
+ft_returnCode(){
+  if [ $? -eq 0 ]; then
+    echo '\[\033[2;32m\][v]\[\033[00m\]'
+  else
+    echo '\[\033[2;31m\][x]\[\033[00m\]'
+  fi
+}
+
+ft_currentDirectory(){
+    echo '\[\033[0;94m\]$(ft_path)$ \[\033[00m\]'  
+}
+
+function prompt_cmd
+{
+  returnCode=$(ft_returnCode)
+  currentDirectory=$(ft_currentDirectory)
+  export PS1="$returnCode$currentDirectory"
+}
+
+export PROMPT_COMMAND=prompt_cmd
+```
+
 ### more var
 
 ```sh
