@@ -129,13 +129,14 @@ __prompt_command() {
 ### PS1 from 14.08.2024
 
 ```bash
+### CUSTOM PS1 ###
 # current path, no more than 8 characters
 ft_path(){ 
     pwd | 
     awk -F / '{if (length($NF) > 8) print substr($NF,1,6)"*"substr($NF,length($NF),length($NF)); else printf $NF}';
 }
 
-# rc in prefix
+# .rc in prefix
 ft_returnCode(){
   if [ $? -eq 0 ]; then
     echo '\[\033[2;32m\][v]\[\033[00m\]'
@@ -145,7 +146,14 @@ ft_returnCode(){
 }
 
 ft_currentDirectory(){
-    echo '\[\033[0;94m\]$(ft_path)$ \[\033[00m\]'  
+  if [ $HOSTNAME == "zion" ]; then    
+    echo '\[\033[0;93m\]$(ft_path)$ \[\033[00m\]'   # Yellow
+  elif [ $HOSTNAME == "ubuntu" ]; then
+    echo '\[\033[0;32m\]$(ft_path)$ \[\033[00m\]'   # Green
+    # echo '\[\033[0;95m\]$(ft_path)$ \[\033[00m\]' # Purple
+  else 
+    echo '\[\033[0;94m\]$(ft_path)$ \[\033[00m\]'   # Blue
+  fi
 }
 
 function prompt_cmd
@@ -156,6 +164,7 @@ function prompt_cmd
 }
 
 export PROMPT_COMMAND=prompt_cmd
+### exit: CUSTOM PS! ###
 ```
 
 ### more var
