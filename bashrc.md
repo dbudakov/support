@@ -122,6 +122,9 @@ __prompt_command() {
     PS1+="\[\033[0;91m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\$(DIR_LAST 2)\[\033[00m\]$(parse_git_branch)\[\033[00m\]$ "
 }
 ```
+### shell color
+
+- [Git shell coloring](https://gist.github.com/vratiu/9780109)  
 
 ### PS1 from 14.08.2024
 
