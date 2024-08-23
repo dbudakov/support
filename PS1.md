@@ -41,6 +41,8 @@ export PROMPT_COMMAND=prompt_cmd
 ### Kali ~/.bashrc
 
 ```bash
+# https://www.linux.org/threads/replicate-kali-linux-bash-ps1-to-other-distro.47281/
+
 # ~/.bashrc: executed by bash(1) for non-login shells.
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
 # for examples
