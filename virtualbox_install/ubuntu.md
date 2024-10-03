@@ -38,3 +38,16 @@ Vagrant.configure("2") do |config|
   config.vm.box = "bento/ubuntu-24.04"
 end
 ```
+
+Для запуска создания виртуальной машины выполнить 
+```bash
+vagrant up
+```
+Для подключение к виртуальной машине выполнить
+```bash
+vagrant ssh
+```
+Для удаления виртуальной машины выполнить
+```
+vagrant destroy -f
+```
