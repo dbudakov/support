@@ -44,3 +44,13 @@ irm https://get.activated.win | iex
 - Ввести команду oobe\BypassNRO.
 - После выполнения команды система перезагрузится.
 - Если подключение к интернету уже настроено, выключить роутер
+
+
+#### отключение, окна входа в уз
+
+```powershell
+# Shift+F10
+reg add HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\OOBE /v HideOnlineAccountScreens /t REG_DWORD /d 1 /f
+reg add HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\OOBE /v HideWirelessSetupInOOBE /t REG_DWORD /d 1 /f...
+shutdown /r /t 0
+```
