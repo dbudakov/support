@@ -27,7 +27,7 @@ Dism /Unmount-Image /MountDir:C:\mount /Commit
 ### activation
 
 - [gihub](https://github.com/massgravel/Microsoft-Activation-Scripts?ysclid=mfexpmhha7414682139)
-massgravel/Microsoft-Activation-Scripts
+- massgravel/Microsoft-Activation-Scripts
 
 ```powershell
 irm https://get.activated.win | iex
