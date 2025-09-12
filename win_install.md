@@ -15,7 +15,7 @@ dism /online /export-driver /destination:C:\Drivers
 Export-WindowsDriver –Online -Destination c:\Drivers
 ```
 
-### драйвера: добавлени драйверов в загрузочный образ
+### драйвера: добавление драйверов в загрузочный образ
 - [source](https://learn.microsoft.com/ru-ru/windows-hardware/manufacture/desktop/add-and-remove-drivers-to-an-offline-windows-image?view=windows-11)
 
 ```powershell
